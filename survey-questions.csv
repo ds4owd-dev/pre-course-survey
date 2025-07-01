@@ -1,4 +1,4 @@
-type,name,label,required,required_message,hint,relevant,constraint,constraint_message,calculation,repeat_count,appearance,default,choice_filter,media::image,media::audio,media::video,body::accuracyThreshold,body::accuracyMessage,body::requireAccuracy,body::jr:requiredMsg
+type,name,label,required,required_message,hint,relevant,constraint,constraint_message,calculation,repeat_count,appearance,default,choice_filter,media::image,media::audio,media::video,body::accuracyThreshold,body::accuracyMessage,body::requireAccuracy,body::jr:requiredMsg,notes
 begin group,personal_info,Personal Information,,,,,,,,,,,,,,,,,,,
 text,github_username,Please provide your GitHub username,yes,This field is required,,,,,,,,,,,,,,,,,
 text,orcid_id,"Please provide your ORCID iD (e.g. 0000-0003-2196-5015)",yes,This field is required,,,"regex(., '^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$')",Please enter a valid ORCID iD format,,,,,,,,,,,,,

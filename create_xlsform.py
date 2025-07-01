@@ -6,9 +6,9 @@ Create XLSForm Excel file from CSV files for KoboToolbox
 import pandas as pd
 import os
 
-# Read CSV files
-survey_df = pd.read_csv('survey-questions.csv')
-choices_df = pd.read_csv('survey-choices.csv')
+# Read CSV files with explicit settings
+survey_df = pd.read_csv('survey-questions.csv', quoting=1, escapechar='\\')
+choices_df = pd.read_csv('survey-choices.csv', quoting=1, escapechar='\\')
 settings_df = pd.read_csv('survey-settings.csv')
 
 # Create Excel writer
