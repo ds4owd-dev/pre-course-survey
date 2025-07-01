@@ -266,10 +266,17 @@ documents that include text and analysis?
 **Options:**
 
 - RStudio
-- VS Code
+- Positron
+- Visual Studio Code (VS Code)
 - PyCharm
 - JupyterLab
-- Other IDEs
+- Jupyter Notebook
+- Atom
+- Sublime Text
+- MATLAB IDE
+- Emacs
+- Vim
+- None of the above
 
 ## IDE Experience Level
 
@@ -324,7 +331,30 @@ How would you describe your experience?
 - Perplexity AI
 - Llama (Meta)
 - Mistral AI
-- Other LLM tools (32 options total)
+- Pi
+- DeepSeek
+- Amazon Bedrock
+- xAI (Grok)
+- Replit AI
+- Phind
+- Tabnine
+- Codeium
+- Starcoder
+- Google Duet AI
+- Notion AI
+- Jasper
+- Cline
+- Cursor AI
+- Magic AI
+- Zoom AI Companion
+- Elicit
+- Research Rabbit
+- Semantic Scholar AI
+- SciSummary
+- Paperpal
+- Consensus
+- Scite Assistant
+- Scispace Literature Review Tools
 
 ## LLM Usage for Tasks
 
@@ -353,20 +383,37 @@ following tasks?
 
 # Project and Course Participation
 
-## Knowledge
+## Learning Goals
 
-**Question Type:** Long answer text
+**Question Type:** Long Text  
+**Required:** No
 **Text:** What do you want to know or be able to do that you don’t know or can’t do right now?
 
 ## Data Availability
 
-**Question Type:** To be determined  
-**Text:** Questions about data availability for course project
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Can you identify a dataset of your own or your organisation
+that you can use for the capstone project report and share publicly as
+open data (see details in survey description Step 3)?  
+**Options:**
 
-## Mentorship Interest
+- Yes
+- No
 
-**Question Type:** To be determined  
-**Text:** Interest in becoming a mentor for future courses
+## Mentorship Programme
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** We are launching a mentorship programme that brings together
+participants with different levels of experience, so they can support
+and learn from each other in small groups. Are you interested in
+joining this mentorship programme?  
+**Options:**
+
+- Yes, as a mentor
+- Yes, as a mentee
+- No, I am not interested
 
 # Agreements and Consent
 
@@ -374,13 +421,20 @@ following tasks?
 
 **Question Type:** Checkbox/Agreement  
 **Required:** Yes  
-**Text:** Acknowledgement of Code of Conduct
+**Text:** I acknowledge that I have read and understood the code of
+conduct for this course, and I commit to complying with its guidelines
+and principles to ensure a respectful and ethical learning environment
+for all participants.
 
-## Data Privacy
+## Data Privacy Statement
 
 **Question Type:** Checkbox/Agreement  
 **Required:** Yes  
-**Text:** Consent for data collection and usage
+**Text:** I agree that by submitting this form, I consent to my data
+being used for course administration and management, accessed only by
+instructors, securely stored, not shared with third parties,
+anonymized for reporting, and potentially used for future research to
+improve the course.
 
 # Form Submission
 

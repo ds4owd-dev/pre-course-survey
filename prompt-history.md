@@ -32,3 +32,5 @@ Write a CLAUDE.md for the project and include
 - IDE usage
 - Command-line interface experience
 - Large Language Model usage
+
+2025-01-07 11:10:00 - For questions on IDE usage, LLM tools, extract all options. For project and course participation section. Extract all questions, text and response levels.

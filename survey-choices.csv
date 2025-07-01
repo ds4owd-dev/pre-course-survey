@@ -267,10 +267,17 @@ doc_writing,word_copy_paste,Word processors with copy/paste code output,2
 doc_writing,latex_copy_paste,LaTeX with copy/paste code output,3
 doc_writing,literate_prog,Literate programming notebooks,4
 ide_list,rstudio,RStudio,1
-ide_list,vscode,VS Code,2
-ide_list,pycharm,PyCharm,3
-ide_list,jupyterlab,JupyterLab,4
-ide_list,other,Other IDEs,5
+ide_list,positron,Positron,2
+ide_list,vscode,Visual Studio Code (VS Code),3
+ide_list,pycharm,PyCharm,4
+ide_list,jupyterlab,JupyterLab,5
+ide_list,jupyter_notebook,Jupyter Notebook,6
+ide_list,atom,Atom,7
+ide_list,sublime,Sublime Text,8
+ide_list,matlab_ide,MATLAB IDE,9
+ide_list,emacs,Emacs,10
+ide_list,vim,Vim,11
+ide_list,none,None of the above,12
 ide_exp,never,Never used an IDE,1
 ide_exp,occasional,Occasionally used for basic editing,2
 ide_exp,regular,Regularly used for own projects,3
@@ -289,8 +296,36 @@ llm_tools,copilot_365,Copilot for Microsoft 365,7
 llm_tools,perplexity,Perplexity AI,8
 llm_tools,llama,Llama (Meta),9
 llm_tools,mistral,Mistral AI,10
-llm_tools,other,Other LLM tools,11
+llm_tools,pi,Pi,11
+llm_tools,deepseek,DeepSeek,12
+llm_tools,bedrock,Amazon Bedrock,13
+llm_tools,grok,xAI (Grok),14
+llm_tools,replit,Replit AI,15
+llm_tools,phind,Phind,16
+llm_tools,tabnine,Tabnine,17
+llm_tools,codeium,Codeium,18
+llm_tools,starcoder,Starcoder,19
+llm_tools,duet,Google Duet AI,20
+llm_tools,notion,Notion AI,21
+llm_tools,jasper,Jasper,22
+llm_tools,cline,Cline,23
+llm_tools,cursor,Cursor AI,24
+llm_tools,magic,Magic AI,25
+llm_tools,zoom,Zoom AI Companion,26
+llm_tools,elicit,Elicit,27
+llm_tools,research_rabbit,Research Rabbit,28
+llm_tools,semantic_scholar,Semantic Scholar AI,29
+llm_tools,scisummary,SciSummary,30
+llm_tools,paperpal,Paperpal,31
+llm_tools,consensus,Consensus,32
+llm_tools,scite,Scite Assistant,33
+llm_tools,scispace,Scispace Literature Review Tools,34
 llm_freq,never,I have not used any LLMs.,1
 llm_freq,occasional,I use LLMs occasionally when needed (e.g once a week).,2
 llm_freq,regular,I regularly use LLMs to improve efficiency (e.g. once a day).,3
 llm_freq,rely,I rely on LLMs for completion (e.g. several times a day).,4
+data_available,yes,Yes,1
+data_available,no,No,2
+mentorship,mentor,Yes as a mentor,1
+mentorship,mentee,Yes as a mentee,2
+mentorship,not_interested,No I am not interested,3
