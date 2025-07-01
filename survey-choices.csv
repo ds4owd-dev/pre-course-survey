@@ -329,3 +329,4 @@ data_available,no,No,2
 mentorship,mentor,"Yes, as a mentor",1
 mentorship,mentee,"Yes, as a mentee",2
 mentorship,not_interested,"No, I am not interested",3
+yes_only,yes,Yes,1
