@@ -85,21 +85,43 @@ preserving all information about platform-specific differences.
 
 ## File Organization
 
-### Core Survey Files
-- `ds4owd_precourse_survey.xlsx` - **Final XLSForm for KoboToolbox**
-- `survey-questions.csv` - Survey structure and questions
-- `survey-choices.csv` - All choice lists with detailed examples
-- `survey-settings.csv` - Form metadata and description
+### Project Structure
+```
+pre-course-survey/
+├── README.md                    # This file - complete documentation
+├── CLAUDE.md                    # Development guidelines and lessons learned
+├── pre-course-survey.Rproj      # R project configuration
+├── forms/                       # Final survey forms and review documents
+│   ├── ds4owd_precourse_survey.xlsx   # **Final XLSForm for KoboToolbox**
+│   └── survey-content.qmd             # Human-readable content for review
+├── data/                        # Source data and configuration files
+│   ├── survey-questions.csv           # Survey structure and questions
+│   ├── survey-choices.csv             # All choice lists with examples
+│   ├── survey-settings.csv            # Form metadata and description
+│   └── countries-iso3c.csv            # Complete country reference
+├── scripts/                     # Development and build tools
+│   └── create_xlsform.py              # Python script to generate XLSForm
+└── docs/                        # Process documentation
+    └── prompt-history.md              # Complete prompt tracking log
+```
 
-### Documentation and Reference
-- `survey-content.qmd` - Human-readable survey content for review
-- `countries-iso3c.csv` - Complete country reference with ISO codes
-- `prompt-history.md` - Complete prompt tracking log
-- `CLAUDE.md` - Project-specific development guidelines
+### File Categories
 
-### Development Tools
-- `create_xlsform.py` - Python script to generate XLSForm from CSV files
-- `pre-course-survey.Rproj` - R project configuration
+#### **Forms** (`forms/`)
+- **Production Files:** Ready-to-deploy survey forms
+- **Review Documents:** Human-readable content for collaboration
+
+#### **Data** (`data/`)
+- **Source Files:** CSV components for XLSForm generation
+- **Reference Data:** Supporting data like country codes
+
+#### **Scripts** (`scripts/`)
+- **Build Tools:** Automation scripts for form generation
+- **Utilities:** Development and validation helpers
+
+#### **Documentation** (`docs/`)
+- **Process Records:** Detailed development history
+- **Reference Materials:** Supporting documentation
 
 ## Survey Content Statistics
 
@@ -133,16 +155,16 @@ preserving all information about platform-specific differences.
 ### For KoboToolbox
 1. Go to [KoboToolbox](https://www.kobotoolbox.org/)
 2. Create new project
-3. Upload `ds4owd_precourse_survey.xlsx`
+3. Upload `forms/ds4owd_precourse_survey.xlsx`
 4. Deploy form
 
 ### For Local Development
 ```bash
 # Regenerate XLSForm from CSV files
-python3 create_xlsform.py
+python3 scripts/create_xlsform.py
 
 # Render survey content for review
-quarto render survey-content.qmd
+quarto render forms/survey-content.qmd
 ```
 
 ## Lessons Learned

@@ -12,10 +12,11 @@ and platform compatibility resolution.
 
 ## Key Deliverables
 
-1. **XLSForm** - `ds4owd_precourse_survey.xlsx` for KoboToolbox
+1. **XLSForm** - `forms/ds4owd_precourse_survey.xlsx` for KoboToolbox
    deployment
-2. **Quarto Document** - `survey-content.qmd` for collaborative review
-3. **CSV Components** - Modular files for XLSForm generation
+2. **Quarto Document** - `forms/survey-content.qmd` for collaborative
+   review
+3. **CSV Components** - Modular files in `data/` for XLSForm generation
 4. **Documentation** - Complete process documentation and lessons
    learned
 
@@ -98,15 +99,19 @@ and platform compatibility resolution.
 pre-course-survey/
 ├── README.md                          # Complete process documentation
 ├── CLAUDE.md                          # This file
-├── ds4owd_precourse_survey.xlsx       # Final XLSForm
-├── survey-questions.csv               # Survey structure
-├── survey-choices.csv                 # Choice lists
-├── survey-settings.csv                # Form metadata
-├── survey-content.qmd                 # Content review document
-├── countries-iso3c.csv                # Country reference
-├── create_xlsform.py                  # Generation script
-├── prompt-history.md                  # Prompt tracking
-└── pre-course-survey.Rproj            # R project config
+├── pre-course-survey.Rproj            # R project config
+├── forms/                             # Final survey forms
+│   ├── ds4owd_precourse_survey.xlsx   # Final XLSForm
+│   └── survey-content.qmd             # Content review document
+├── data/                              # Source data and configuration
+│   ├── survey-questions.csv           # Survey structure
+│   ├── survey-choices.csv             # Choice lists
+│   ├── survey-settings.csv            # Form metadata
+│   └── countries-iso3c.csv            # Country reference
+├── scripts/                           # Development tools
+│   └── create_xlsform.py              # Generation script
+└── docs/                              # Process documentation
+    └── prompt-history.md              # Prompt tracking
 ```
 
 ### Quality Assurance Checklist
@@ -144,14 +149,14 @@ pre-course-survey/
 ### Emergency Debugging Commands
 ```bash
 # Check CSV structure
-python3 -c "import pandas as pd; print(pd.read_csv('survey-questions.csv').shape)"
+python3 -c "import pandas as pd; print(pd.read_csv('data/survey-questions.csv').shape)"
 
 # Validate column consistency
-grep -o ',' survey-questions.csv | wc -l
+grep -o ',' data/survey-questions.csv | wc -l
 
 # Test XLSForm generation
-python3 create_xlsform.py
+python3 scripts/create_xlsform.py
 
 # Check for problematic characters
-grep -P '[^\x00-\x7F]' survey-*.csv
+grep -P '[^\x00-\x7F]' data/survey-*.csv
 ```
