@@ -1,0 +1,227 @@
+list_name,name,label,order
+education_level,no_formal,No formal education,1
+education_level,primary,Primary education,2
+education_level,lower_secondary,Lower secondary education,3
+education_level,upper_secondary,Upper secondary education,4
+education_level,postsecondary_non_tertiary,Postsecondary non-tertiary education,5
+education_level,bachelor,Bachelor's degree,6
+education_level,master,Master's degree,7
+education_level,doctorate,Doctorate or higher,8
+employment_status,employed_fulltime,Employed full-time,1
+employment_status,employed_parttime,Employed part-time,2
+employment_status,self_employed,Self-employed,3
+employment_status,unemployed_looking,Unemployed and looking for work,4
+employment_status,unemployed_not_looking,Unemployed and not looking for work,5
+employment_status,retired,Retired,6
+employment_status,student,Student,7
+employment_status,homemaker,Homemaker or caring for family,8
+employment_status,unable_disability,Unable to work due to disability/illness,9
+organisation_type,academia,Academia,1
+organisation_type,government,Government,2
+organisation_type,ngo,NGO,3
+organisation_type,private_sector,Private sector,4
+organisation_type,independent_consultant,Independent consultant,5
+organisation_type,multilateral,Multi-lateral organisation,6
+barrier_scale,not_barrier,Not a barrier,1
+barrier_scale,barrier,A barrier,2
+barrier_scale,dont_know,I don't know,3
+programming_exp,none,I have none,1
+programming_exp,few_lines,I have written a few lines,2
+programming_exp,own_use,I have written programs for own use,3
+programming_exp,maintained,I have written and maintained larger software,4
+countries,AFG,Afghanistan,1
+countries,ALB,Albania,2
+countries,DZA,Algeria,3
+countries,AND,Andorra,4
+countries,AGO,Angola,5
+countries,ATG,Antigua and Barbuda,6
+countries,ARG,Argentina,7
+countries,ARM,Armenia,8
+countries,AUS,Australia,9
+countries,AUT,Austria,10
+countries,AZE,Azerbaijan,11
+countries,BHS,Bahamas,12
+countries,BHR,Bahrain,13
+countries,BGD,Bangladesh,14
+countries,BRB,Barbados,15
+countries,BLR,Belarus,16
+countries,BEL,Belgium,17
+countries,BLZ,Belize,18
+countries,BEN,Benin,19
+countries,BTN,Bhutan,20
+countries,BOL,Bolivia,21
+countries,BIH,Bosnia and Herzegovina,22
+countries,BWA,Botswana,23
+countries,BRA,Brazil,24
+countries,BRN,Brunei Darussalam,25
+countries,BGR,Bulgaria,26
+countries,BFA,Burkina Faso,27
+countries,BDI,Burundi,28
+countries,CPV,Cabo Verde,29
+countries,KHM,Cambodia,30
+countries,CMR,Cameroon,31
+countries,CAN,Canada,32
+countries,CAF,Central African Republic,33
+countries,TCD,Chad,34
+countries,CHL,Chile,35
+countries,CHN,China,36
+countries,COL,Colombia,37
+countries,COM,Comoros,38
+countries,COG,Congo,39
+countries,COD,Congo Democratic Republic,40
+countries,CRI,Costa Rica,41
+countries,CIV,Côte d'Ivoire,42
+countries,HRV,Croatia,43
+countries,CUB,Cuba,44
+countries,CYP,Cyprus,45
+countries,CZE,Czechia,46
+countries,DNK,Denmark,47
+countries,DJI,Djibouti,48
+countries,DMA,Dominica,49
+countries,DOM,Dominican Republic,50
+countries,ECU,Ecuador,51
+countries,EGY,Egypt,52
+countries,SLV,El Salvador,53
+countries,GNQ,Equatorial Guinea,54
+countries,ERI,Eritrea,55
+countries,EST,Estonia,56
+countries,SWZ,Eswatini,57
+countries,ETH,Ethiopia,58
+countries,FJI,Fiji,59
+countries,FIN,Finland,60
+countries,FRA,France,61
+countries,GAB,Gabon,62
+countries,GMB,Gambia,63
+countries,GEO,Georgia,64
+countries,DEU,Germany,65
+countries,GHA,Ghana,66
+countries,GRC,Greece,67
+countries,GRD,Grenada,68
+countries,GTM,Guatemala,69
+countries,GIN,Guinea,70
+countries,GNB,Guinea-Bissau,71
+countries,GUY,Guyana,72
+countries,HTI,Haiti,73
+countries,HND,Honduras,74
+countries,HUN,Hungary,75
+countries,ISL,Iceland,76
+countries,IND,India,77
+countries,IDN,Indonesia,78
+countries,IRN,Iran,79
+countries,IRQ,Iraq,80
+countries,IRL,Ireland,81
+countries,ISR,Israel,82
+countries,ITA,Italy,83
+countries,JAM,Jamaica,84
+countries,JPN,Japan,85
+countries,JOR,Jordan,86
+countries,KAZ,Kazakhstan,87
+countries,KEN,Kenya,88
+countries,KIR,Kiribati,89
+countries,PRK,Korea Democratic People's Republic,90
+countries,KOR,Korea Republic of,91
+countries,KWT,Kuwait,92
+countries,KGZ,Kyrgyzstan,93
+countries,LAO,Lao People's Democratic Republic,94
+countries,LVA,Latvia,95
+countries,LBN,Lebanon,96
+countries,LSO,Lesotho,97
+countries,LBR,Liberia,98
+countries,LBY,Libya,99
+countries,LIE,Liechtenstein,100
+countries,LTU,Lithuania,101
+countries,LUX,Luxembourg,102
+countries,MDG,Madagascar,103
+countries,MWI,Malawi,104
+countries,MYS,Malaysia,105
+countries,MDV,Maldives,106
+countries,MLI,Mali,107
+countries,MLT,Malta,108
+countries,MHL,Marshall Islands,109
+countries,MRT,Mauritania,110
+countries,MUS,Mauritius,111
+countries,MEX,Mexico,112
+countries,FSM,Micronesia,113
+countries,MDA,Moldova,114
+countries,MCO,Monaco,115
+countries,MNG,Mongolia,116
+countries,MNE,Montenegro,117
+countries,MAR,Morocco,118
+countries,MOZ,Mozambique,119
+countries,MMR,Myanmar,120
+countries,NAM,Namibia,121
+countries,NRU,Nauru,122
+countries,NPL,Nepal,123
+countries,NLD,Netherlands,124
+countries,NZL,New Zealand,125
+countries,NIC,Nicaragua,126
+countries,NER,Niger,127
+countries,NGA,Nigeria,128
+countries,MKD,North Macedonia,129
+countries,NOR,Norway,130
+countries,OMN,Oman,131
+countries,PAK,Pakistan,132
+countries,PLW,Palau,133
+countries,PSE,Palestine,134
+countries,PAN,Panama,135
+countries,PNG,Papua New Guinea,136
+countries,PRY,Paraguay,137
+countries,PER,Peru,138
+countries,PHL,Philippines,139
+countries,POL,Poland,140
+countries,PRT,Portugal,141
+countries,QAT,Qatar,142
+countries,ROU,Romania,143
+countries,RUS,Russian Federation,144
+countries,RWA,Rwanda,145
+countries,KNA,Saint Kitts and Nevis,146
+countries,LCA,Saint Lucia,147
+countries,VCT,Saint Vincent and the Grenadines,148
+countries,WSM,Samoa,149
+countries,SMR,San Marino,150
+countries,STP,Sao Tome and Principe,151
+countries,SAU,Saudi Arabia,152
+countries,SEN,Senegal,153
+countries,SRB,Serbia,154
+countries,SYC,Seychelles,155
+countries,SLE,Sierra Leone,156
+countries,SGP,Singapore,157
+countries,SVK,Slovakia,158
+countries,SVN,Slovenia,159
+countries,SLB,Solomon Islands,160
+countries,SOM,Somalia,161
+countries,ZAF,South Africa,162
+countries,SSD,South Sudan,163
+countries,ESP,Spain,164
+countries,LKA,Sri Lanka,165
+countries,SDN,Sudan,166
+countries,SUR,Suriname,167
+countries,SWE,Sweden,168
+countries,CHE,Switzerland,169
+countries,SYR,Syrian Arab Republic,170
+countries,TWN,Taiwan,171
+countries,TJK,Tajikistan,172
+countries,TZA,Tanzania,173
+countries,THA,Thailand,174
+countries,TLS,Timor-Leste,175
+countries,TGO,Togo,176
+countries,TON,Tonga,177
+countries,TTO,Trinidad and Tobago,178
+countries,TUN,Tunisia,179
+countries,TUR,Turkey,180
+countries,TKM,Turkmenistan,181
+countries,TUV,Tuvalu,182
+countries,UGA,Uganda,183
+countries,UKR,Ukraine,184
+countries,ARE,United Arab Emirates,185
+countries,GBR,United Kingdom,186
+countries,USA,United States,187
+countries,URY,Uruguay,188
+countries,UZB,Uzbekistan,189
+countries,VUT,Vanuatu,190
+countries,VAT,Vatican City,191
+countries,VEN,Venezuela,192
+countries,VNM,Viet Nam,193
+countries,YEM,Yemen,194
+countries,ZMB,Zambia,195
+countries,ZWE,Zimbabwe,196

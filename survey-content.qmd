@@ -1,0 +1,216 @@
+---
+title: "Pre-course survey: data science for openwashdata 002"
+format: 
+  docx:
+    toc: true
+    toc-depth: 2
+---
+
+# Survey Overview
+
+This document contains the complete content extracted from the
+pre-course survey for data science for openwashdata 002. Each section
+and question is presented exactly as it appears in the original form.
+
+# Personal Information
+
+## GitHub Username
+
+**Question Type:** Short Text  
+**Required:** Yes  
+**Text:** Please provide your GitHub username *
+
+## ORCID iD
+
+**Question Type:** Short Text  
+**Required:** Yes  
+**Text:** Please provide your ORCID iD (e.g. 0000-0003-2196-5015) *
+
+## Your email address
+
+**Question Type:** Short Text  
+**Required:** Yes  
+**Text:** Your email address *
+
+## First Name
+
+**Question Type:** Short Text  
+**Required:** Yes  
+**Text:** First Name *
+
+## Surname
+
+**Question Type:** Short Text  
+**Required:** Yes  
+**Text:** Surname *
+
+## Country of Residence
+
+**Question Type:** Dropdown  
+**Required:** No  
+**Text:** Country of Residence  
+**Options:** A, B, C  
+*Note: Full country list with ISO3c codes to be implemented*
+
+# Education and Employment
+
+## Education Level
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Education Level  
+**Options:**
+
+- No formal education (Never attended school)
+- Primary education (e.g. Elementary school, grades 1–5/6)
+- Lower secondary education (e.g. Middle school, junior high, grades 6–8/9)
+- Upper secondary education  (e.g. High school diploma, A-levels, GED, vocational certificate, trade school diploma)
+- Postsecondary non-tertiary education (e.g. Community college certificate, diploma, foundation year)
+- Bachelor's degree (e.g. BA, BSc, BEng, Bachelor’s degree)
+- Master's degree (e.g. MA, MSc, MEng, MBA, Master’s degree)
+- Doctorate or higher  (e.g. PhD, EdD, MD, JD, DPhil, professional doctorate)
+
+## Employment Situation
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** What is your current employment situation?  
+**Options:**
+
+- Employed full-time
+- Employed part-time
+- Self-employed
+- Unemployed and looking for work
+- Unemployed and not looking for work
+- Retired
+- Student
+- Homemaker or caring for family
+- Unable to work due to disability/illness
+- Other, specify:
+
+## Organisation Name
+
+**Question Type:** Short Text  
+**Required:** No  
+**Text:** If employed or self-employed, what is the name of the
+organisation / instituiton?
+
+## Organisation Type
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** If employed or self-employed, what best describes the
+organisation you work for?  
+**Options:**
+
+- Academia
+- Government
+- NGO
+- Private sector
+- Independent consultant
+- Multi-lateral organisation
+- Other, specify:
+
+# Barriers to Participation
+
+**Question Type:** Grid/Matrix  
+**Required:** No  
+**Text:** Which of the following barriers apply to your complete
+participation in this course?
+
+**Rating Scale:**
+
+- Not a barrier
+- A barrier
+- I don't know
+
+**Barriers to rate:**
+
+- Time availability
+- My supervisors interests
+- Access to stable internet
+- Access to electricity
+- Access to computer/laptop
+- Access to second external screen
+
+# Technical Experience
+
+## Programming Experience
+
+### General Programming
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Experience with programming in general  
+**Options:**
+
+- I have none
+- I have written a few lines
+- I have written programs for own use
+- I have written and maintained larger software
+
+### R Programming
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Experience with programming in R  
+**Options:**
+
+- I have none
+- I have written a few lines
+- I have written programs for own use
+- I have written and maintained larger software
+
+### Python Programming
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Experience with programming in Python  
+**Options:**
+
+- I have none
+- I have written a few lines
+- I have written programs for own use
+- I have written and maintained larger software
+
+## Other Technical Skills
+
+**Note:** The survey includes additional questions about:
+
+- Other programming languages
+- Git/GitHub experience
+- Data storage formats experience
+- Narrative document writing tools
+- IDE usage
+- Command-line interface experience
+- Large Language Model usage
+
+# Project and Course Participation
+
+## Data Availability
+
+**Question Type:** To be determined  
+**Text:** Questions about data availability for course project
+
+## Mentorship Interest
+
+**Question Type:** To be determined  
+**Text:** Interest in becoming a mentor for future courses
+
+# Agreements and Consent
+
+## Code of Conduct
+
+**Question Type:** Checkbox/Agreement  
+**Required:** Yes  
+**Text:** Acknowledgement of Code of Conduct
+
+## Data Privacy
+
+**Question Type:** Checkbox/Agreement  
+**Required:** Yes  
+**Text:** Consent for data collection and usage
+
+# Form Submission
+
+**Submit Button Text:** Send (Senden)
