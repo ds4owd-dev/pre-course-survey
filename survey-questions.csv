@@ -33,13 +33,7 @@ select_one data_storage,data_format,In which format do you store the majority of
 select_one doc_writing,narrative_docs,Which of these best describes how you write narrative documents that include text and analysis?,no,,,,,,,,,,,,,,,,,,
 select_multiple ide_list,ide_used,Which of the following Integrated Development Environments (IDEs) have you used?,no,,,,,,,appearance,,,,,,,,,
 select_one ide_exp,ide_experience,Which of these best describes your experience with using IDEs?,no,,,,,,,,,,,,,,,,,,
-select_one cli_exp,cli_usage,\"Which of these best describes your current usage of the default command-line interface (CLI)?
-
-On Mac: The default CLI app is Terminal, and the default shell is Zsh (you may also use Bash or other shells)
-
-On Windows: The default CLI app is Windows Terminal, which can run Command Prompt, PowerShell, and Bash (via Windows Subsystem for Linux)
-
-How would you describe your experience?\",no,,,,,,,,,,,,,,,,,,
+select_one cli_exp,cli_usage,"Which of these best describes your current usage of the default command-line interface (CLI)? On Mac: The default CLI app is Terminal and the default shell is Zsh (you may also use Bash or other shells). On Windows: The default CLI app is Windows Terminal which can run Command Prompt PowerShell and Bash (via Windows Subsystem for Linux). How would you describe your experience?",no,,,,,,,,,,,,,,,,,,
 select_multiple llm_tools,llm_platforms,Which Large Language Model tools/platforms have you used?,no,,,,,,,appearance,,,,,,,,,
 note,llm_usage_intro,How frequently do you use Large Language Models for the following tasks?,,,,,,,,,,,,,,,,,,,
 select_one llm_freq,llm_summarization,"For Summarization (e.g., \"Summarize this research paper in 200 words.\")",no,,,,,,,,,,,,,,,,,,
