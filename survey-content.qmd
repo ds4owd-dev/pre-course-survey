@@ -377,9 +377,9 @@ following tasks?
 - Question Answering (e.g., "What are the symptoms of vitamin D deficiency?")
 - Conversational Assistance / Chatbots (e.g., "Help me with my online order"))
 - Data Analysis / Extraction (e.g., "Extract all dates and names from this contract.")
-- Content Generation (beyond writing)
+- Content Generation (e.g. images, videos)
 - Learning/Teaching/Tutoring (e.g., "Explain the Pythagorean theorem.")
-- Agentic Task Automation (LLM acts autonomously or semi-autonomously to perform tasks)
+- Agentic Task Automation (i.e. LLM acts autonomously or semi-autonomously to perform tasks)
 
 # Project and Course Participation
 
@@ -424,17 +424,13 @@ joining this mentorship programme?
 **Text:** I acknowledge that I have read and understood the code of
 conduct for this course, and I commit to complying with its guidelines
 and principles to ensure a respectful and ethical learning environment
-for all participants.
+for all participants. Available at: https://ds4owd-002.github.io/website/code_of_conduct.html
 
 ## Data Privacy Statement
 
 **Question Type:** Checkbox/Agreement  
 **Required:** Yes  
-**Text:** I agree that by submitting this form, I consent to my data
-being used for course administration and management, accessed only by
-instructors, securely stored, not shared with third parties,
-anonymized for reporting, and potentially used for future research to
-improve the course.
+**Text:** I agree that by submitting this form, I consent to my data being used for course administration and management, accessed only by instructors, securely stored, not shared with third parties, anonymized for reporting, and potentially used for future research to improve the course. For reporting purposes, your personal identifiers (ORCID iD, GitHub username) will be removed from the data. The anonymized data may be used for future research, scientific publications, and analysis to improve the course. 
 
 # Form Submission
 
