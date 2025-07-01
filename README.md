@@ -1,107 +1,196 @@
-# Pre-course Survey for DS4OWD 002
+# Google Form to KoboToolbox XLSForm Conversion
 
-This repository contains the pre-course survey materials for the Data
-Science for OpenWashData (DS4OWD) course, iteration 002.
+This project documents the complete process of extracting content from a
+Google Form and converting it into a fully functional XLSForm for
+KoboToolbox deployment.
 
-## Files Overview
+## Project Overview
 
-### Survey Content
-- `survey-content.qmd` - Quarto document with complete survey content
-  for review (can be rendered to DOCX format)
+**Original Source:** Google Forms pre-course survey for Data Science for
+OpenWashData (DS4OWD) course iteration 002  
+**Target Output:** KoboToolbox-compatible XLSForm with complete content
+preservation  
+**Duration:** Approximately 1 hour 6 minutes (14:36-15:42)  
+**Total Commits:** 11 (8 by Claude, 3 by user)
 
-### KoboToolbox Files
-- `ds4owd_precourse_survey.xlsx` - Ready-to-upload XLSForm for
-  KoboToolbox
+## Process Summary
+
+### Phase 1: Initial Content Extraction (14:36-14:40)
+- Extracted basic survey structure from Google Form
+- Created initial Quarto document for review
+- Generated baseline CSV files for KoboToolbox
+- Created project documentation (CLAUDE.md, prompt-history.md)
+
+### Phase 2: Content Verification and Enhancement (14:40-15:00)
+- **Critical Discovery:** Initial extraction missed significant content
+- Added complete technical skills questions (programming languages, Git,
+  IDEs, LLMs)
+- Expanded choice lists from 23 to 34 LLM tools
+- Added detailed programming experience questions
+- Enhanced IDE options from 5 to 12 environments
+
+### Phase 3: XLSForm Generation and Debugging (15:00-15:20)
+- Created Python script to generate Excel files from CSV
+- **Major Challenge:** CSV formatting issues with commas in text fields
+- Fixed column count mismatches (21 header vs 22 data columns)
+- Resolved group syntax issues (begin_group → "begin group")
+- Changed acknowledge question type to select_one with yes_only choices
+
+### Phase 4: Complete Content Integration (15:20-15:34)
+- Added full Google Form description (course details, signup steps)
+- Integrated all response examples from detailed .qmd analysis
+- Enhanced education level choices with specific examples
+- Added platform-specific CLI descriptions
+- Included detailed LLM task examples with real use cases
+
+### Phase 5: KoboToolbox Compatibility Fixes (15:34-15:42)
+- Resolved multiline text formatting issues
+- Fixed XPath expression errors in instance naming
+- Eliminated deployment validation errors
+- Final compatibility testing and verification
+
+## Key Challenges and Solutions
+
+### 1. Content Completeness Verification
+**Challenge:** Initial extraction missed substantial content including
+detailed examples and technical question categories.
+
+**Solution:** Implemented iterative verification process comparing Google
+Form content with generated files. Created intermediate .qmd file to
+capture all content for systematic review.
+
+### 2. CSV Format Compatibility
+**Challenge:** Text fields containing commas, quotes, and special
+characters broke CSV parsing.
+
+**Solution:** Implemented proper CSV quoting standards, escaped special
+characters, and added column count validation to prevent structure
+mismatches.
+
+### 3. XLSForm Syntax Requirements
+**Challenge:** KoboToolbox has strict requirements for group syntax,
+question types, and XPath expressions.
+
+**Solution:** 
+- Changed `begin_group`/`end_group` to `begin group`/`end group`
+- Replaced unsupported `acknowledge` type with `select_one yes_only`
+- Simplified instance naming to avoid XPath validation errors
+
+### 4. Multiline Content Handling
+**Challenge:** Questions with multiline descriptions (e.g., CLI usage)
+caused parsing errors in KoboToolbox.
+
+**Solution:** Converted multiline content to single-line format while
+preserving all information about platform-specific differences.
+
+## File Organization
+
+### Core Survey Files
+- `ds4owd_precourse_survey.xlsx` - **Final XLSForm for KoboToolbox**
 - `survey-questions.csv` - Survey structure and questions
-- `survey-choices.csv` - Choice lists for multiple choice questions
-- `survey-settings.csv` - Form settings and metadata
-- `countries-iso3c.csv` - Reference list of all countries with ISO3c
-  codes
+- `survey-choices.csv` - All choice lists with detailed examples
+- `survey-settings.csv` - Form metadata and description
 
-### Utilities
-- `create_xlsform.py` - Python script to generate XLSForm from CSV
-  files
+### Documentation and Reference
+- `survey-content.qmd` - Human-readable survey content for review
+- `countries-iso3c.csv` - Complete country reference with ISO codes
+- `prompt-history.md` - Complete prompt tracking log
+- `CLAUDE.md` - Project-specific development guidelines
 
-## Deploying to KoboToolbox
+### Development Tools
+- `create_xlsform.py` - Python script to generate XLSForm from CSV files
+- `pre-course-survey.Rproj` - R project configuration
 
+## Survey Content Statistics
+
+### Question Categories
+- **Personal Information:** 6 questions (GitHub, ORCID, email, name,
+  country)
+- **Education & Employment:** 4 questions with detailed examples
+- **Barriers to Participation:** 6 barrier assessment questions
+- **Technical Experience:** 15 questions covering programming, tools,
+  and platforms
+- **Project Participation:** 3 questions about goals and mentorship
+- **Agreements:** 2 consent/acknowledgment questions
+
+### Choice Lists
+- **Countries:** 196 countries with ISO3c codes
+- **Programming Languages:** 23 languages and tools
+- **LLM Platforms:** 34 AI tools and platforms
+- **IDE Options:** 12 development environments
+- **Education Levels:** 8 levels with detailed examples
+
+### Content Preservation
+- **Complete Description:** Full course information, meeting schedule,
+  signup instructions
+- **Detailed Examples:** Every choice includes relevant examples (e.g.,
+  "Bachelor's degree (e.g. BA, BSc, BEng)")
+- **Platform Specifics:** OS-specific instructions for CLI usage
+- **Use Case Examples:** Real examples for each LLM task category
+
+## Deployment Instructions
+
+### For KoboToolbox
 1. Go to [KoboToolbox](https://www.kobotoolbox.org/)
-2. Log in or create an account
-3. Click "New Project"
-4. Select "Upload an XLSForm"
-5. Upload `ds4owd_precourse_survey.xlsx`
-6. Review and deploy the form
+2. Create new project
+3. Upload `ds4owd_precourse_survey.xlsx`
+4. Deploy form
 
-## Survey Structure
+### For Local Development
+```bash
+# Regenerate XLSForm from CSV files
+python3 create_xlsform.py
 
-The survey contains the following sections:
+# Render survey content for review
+quarto render survey-content.qmd
+```
 
-1. **Personal Information**
-   - GitHub username
-   - ORCID iD
-   - Email address
-   - Name
-   - Country of residence
+## Lessons Learned
 
-2. **Education and Employment**
-   - Education level
-   - Employment situation
-   - Organisation details
+### Content Extraction Best Practices
+1. **Always verify completeness** - Initial extraction often misses
+   nuanced content
+2. **Use intermediate formats** - .qmd files help verify content
+   preservation
+3. **Cross-reference systematically** - Compare original with generated
+   files section by section
 
-3. **Barriers to Participation**
-   - Time availability
-   - Supervisor interests
-   - Technical access (internet, electricity, computer, screen)
+### XLSForm Development Guidelines
+1. **Test early and often** - KoboToolbox validation catches issues not
+   visible in Excel
+2. **Handle special characters carefully** - Proper CSV quoting is
+   essential
+3. **Keep XPath expressions simple** - Complex expressions often fail
+   validation
+4. **Use supported question types** - Stick to documented KoboToolbox
+   question types
 
-4. **Technical Experience**
-   - Programming experience (general, R, Python)
-   - Other programming languages
-   - Git/GitHub experience
-   - Data storage formats
-   - Document writing approaches
-   - IDE usage
-   - Command-line interface proficiency
-   - Large Language Model usage
+### Project Management Insights
+1. **Document every iteration** - Prompt history proved invaluable for
+   debugging
+2. **Commit frequently** - Small, focused commits make debugging easier
+3. **Version control everything** - Including intermediate files during
+   development
 
-5. **Project and Course Participation**
-   - Learning goals
-   - Data availability for capstone project
-   - Mentorship programme interest
+## Technical Specifications
 
-6. **Agreements and Consent**
-   - Code of Conduct acknowledgment
-   - Data privacy consent
+**Source Format:** Google Forms  
+**Intermediate Format:** Quarto Markdown (.qmd) + CSV files  
+**Target Format:** XLSForm (.xlsx)  
+**Validation:** KoboToolbox ODK Validate  
+**Dependencies:** Python 3, pandas, openpyxl
 
-## Modifying the Survey
+## Project Statistics
 
-To modify the survey:
+- **Development Time:** ~66 minutes
+- **Total Commits:** 11
+- **Claude Commits:** 8 (automated development)
+- **User Commits:** 3 (manual verification and guidance)
+- **Files Generated:** 10+ including documentation
+- **Questions Captured:** 36 across 6 categories
+- **Choice Options:** 300+ with detailed examples
 
-1. Edit the appropriate CSV files:
-   - `survey-questions.csv` for questions
-   - `survey-choices.csv` for answer options
-   - `survey-settings.csv` for form settings
-
-2. Regenerate the XLSForm:
-   ```bash
-   python3 create_xlsform.py
-   ```
-
-3. Upload the new `ds4owd_precourse_survey.xlsx` to KoboToolbox
-
-## Important Notes
-
-- All text containing commas must be enclosed in double quotes in CSV
-  files
-- The ORCID iD field includes regex validation
-- Email field includes format validation
-- Country list includes all UN-recognized countries with ISO3c codes
-- Code of Conduct URL: https://ds4owd-002.github.io/website/code_of_conduct.html
-
-## Data Privacy
-
-Survey responses will be:
-- Used for course administration and management
-- Accessed only by instructors
-- Securely stored
-- Not shared with third parties
-- Anonymized for reporting (ORCID iD and GitHub username removed)
-- Potentially used for future research to improve the course
+This project demonstrates the complexity of accurately preserving survey
+content while adapting to different platform requirements, highlighting
+the importance of systematic verification and iterative refinement in
+form migration projects.

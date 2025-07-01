@@ -1,5 +1,5 @@
 form_title,form_id,version,instance_name,submission_url,public_key,default_language,style,encryption_key,auto_send,auto_delete,allow_choice_duplicates,form_description
-Pre-course survey: data science for openwashdata 002,ds4owd_precourse_002,20250107001,${first_name}_${surname},,,,theme-grid,,,,,"Thank you for your interest in this course! Your course instructors are looking forward to meeting you. We will meet on Zoom for 10 modules, starting on Thursday, 11th September, from 14:00 to 16:30 CET.
+Pre-course survey: data science for openwashdata 002,ds4owd_precourse_002,20250107001,ds4owd_precourse_response,,,,theme-grid,,,,,"Thank you for your interest in this course! Your course instructors are looking forward to meeting you. We will meet on Zoom for 10 modules, starting on Thursday, 11th September, from 14:00 to 16:30 CET.
 
 Details about the content of the course can be found on the course website: https://ds4owd-002.github.io/website/
 

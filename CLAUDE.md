@@ -1,93 +1,157 @@
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when
-working with code in this repository.
+working with this Google Form to KoboToolbox conversion project.
 
 ## Project Overview
 
-This repository contains a pre-course survey project that involves
-extracting Google Forms content and converting it into multiple formats
-for data collection and collaboration.
+This repository contains a complete Google Forms to KoboToolbox XLSForm
+conversion project for the DS4OWD pre-course survey. The project
+demonstrates best practices for content extraction, format conversion,
+and platform compatibility resolution.
 
 ## Key Deliverables
 
-1. **Quarto Markdown Document** - A collaborative review document with
-   DOCX output containing the complete survey content
-2. **XLSForm** - Excel format for KoboToolbox survey import
-3. **CSV Format** - Machine-readable format for KoboToolbox
-4. **Country Lists** - Global country list with ISO3c codes for
-   dropdown questions
+1. **XLSForm** - `ds4owd_precourse_survey.xlsx` for KoboToolbox
+   deployment
+2. **Quarto Document** - `survey-content.qmd` for collaborative review
+3. **CSV Components** - Modular files for XLSForm generation
+4. **Documentation** - Complete process documentation and lessons
+   learned
 
-## Important Guidelines
+## Critical Success Factors
+
+### Content Completeness Verification
+- **ALWAYS verify initial extraction completeness** - First attempts
+  often miss 30-50% of content
+- Use intermediate formats (.qmd) to systematically compare with source
+- Cross-reference every section, choice list, and example
+- Pay special attention to detailed examples and platform-specific
+  instructions
 
 ### Prompt History Management
 - All prompts must be stored in `prompt-history.md`
-- Include only the date and time of the prompt
-- Do NOT include the response content
+- Include only the date and time of the prompt, not responses
 - Format: `YYYY-MM-DD HH:MM:SS - [Prompt text]`
+- Track decision points and iterative improvements
 
 ### Text Formatting Standards
-- All content in markdown and Quarto markdown must be wrapped at 72
-  characters
-- Use consistent line breaks for readability
+- All markdown content must be wrapped at 72 characters
 - Preserve exact text from source materials without modification
+- Handle special characters (commas, quotes) with proper CSV escaping
+- Convert multiline content to single-line for XLSForm compatibility
 
-### KoboToolbox Best Practices
+## XLSForm Development Best Practices
 
-#### Survey Structure
-- Use clear, unique names for each question
-- Follow naming conventions: lowercase, no spaces, use underscores
-- Include question types explicitly in the XLSForm
-- Mark required questions appropriately
+#### KoboToolbox Compatibility Requirements
+- Use `begin group` and `end group` (with spaces) not underscores
+- Avoid unsupported question types like `acknowledge`
+- Use `select_one yes_only` for agreement questions
+- Keep XPath expressions simple - avoid complex calculations
+- Test multiline content by converting to single-line format
+- Ensure CSV column counts match between header and data rows
 
-#### Question Types
-- `text` - Open-ended text responses
-- `select_one` - Single choice from list
-- `select_multiple` - Multiple choices allowed
-- `integer` - Numeric whole numbers
-- `decimal` - Numeric with decimals
-- `date` - Date selection
-- `time` - Time selection
-- `datetime` - Combined date and time
+#### Common Pitfalls and Solutions
+1. **CSV Parsing Errors**
+   - Quote all text containing commas, quotes, or line breaks
+   - Add dummy columns if data rows exceed header column count
+   - Use proper escape sequences for special characters
 
-#### Choice Lists
-- Define choices in separate sheet
-- Use consistent list naming
-- Include both label and name for each choice
-- For countries: include country name and ISO3c code
+2. **Question Type Compatibility**
+   - Replace `acknowledge` with `select_one yes_only`
+   - Use supported constraint formats: `regex(., 'pattern')`
+   - Test all question types in KoboToolbox before final deployment
 
-#### Validation Rules
-- Add constraints where appropriate
-- Include helpful constraint messages
-- Test all skip logic thoroughly
+3. **XPath Expression Issues**
+   - Use simple field references: `/data/field_name`
+   - Avoid complex concatenations in instance names
+   - Test expressions with KoboToolbox validation
 
-#### Best Practices for Data Quality
-- Use relevant questions to show/hide based on previous answers
-- Add hints to clarify complex questions
-- Include "other" options where appropriate
-- Set reasonable character limits for text fields
+### Development Workflow
+
+#### Phase 1: Content Extraction
+1. Extract initial structure from Google Form
+2. Create comprehensive .qmd file for review
+3. Generate baseline CSV files
+4. **Critical:** Verify completeness against original
+
+#### Phase 2: Content Enhancement
+1. Add missing sections and detailed examples
+2. Expand choice lists with proper labels
+3. Include platform-specific instructions
+4. Preserve all original formatting and examples
+
+#### Phase 3: XLSForm Generation
+1. Create Python script for CSV-to-Excel conversion
+2. Handle CSV formatting and special characters
+3. Test XLSForm structure and syntax
+4. Debug compatibility issues systematically
+
+#### Phase 4: Validation and Deployment
+1. Upload to KoboToolbox for validation
+2. Fix ODK validation errors iteratively
+3. Test deployment and form functionality
+4. Document all solutions for future reference
 
 ### File Organization
 ```
 pre-course-survey/
-├── CLAUDE.md                 # This file
-├── prompt-history.md         # Prompt tracking
-├── survey-content.qmd        # Quarto document
-├── survey-xlsform.xlsx       # KoboToolbox XLSForm
-├── survey-choices.csv        # Choice lists
-├── survey-questions.csv      # Question definitions
-└── countries-iso3c.csv       # Country reference list
+├── README.md                          # Complete process documentation
+├── CLAUDE.md                          # This file
+├── ds4owd_precourse_survey.xlsx       # Final XLSForm
+├── survey-questions.csv               # Survey structure
+├── survey-choices.csv                 # Choice lists
+├── survey-settings.csv                # Form metadata
+├── survey-content.qmd                 # Content review document
+├── countries-iso3c.csv                # Country reference
+├── create_xlsform.py                  # Generation script
+├── prompt-history.md                  # Prompt tracking
+└── pre-course-survey.Rproj            # R project config
 ```
 
-### Country Data Standards
-- Use official country names
-- Include all UN-recognized countries
-- Add ISO 3166-1 alpha-3 codes
-- Sort alphabetically by country name
-- Handle special cases (territories, disputed regions) consistently
+### Quality Assurance Checklist
 
-### Version Control
-- Commit survey versions with clear messages
-- Tag major revisions
-- Document changes in commit messages
-- Keep original form content unchanged
+#### Content Verification
+- [ ] All original sections included
+- [ ] Choice lists complete with examples
+- [ ] Platform-specific instructions preserved
+- [ ] Original description and instructions intact
+
+#### Technical Validation
+- [ ] CSV files parse correctly
+- [ ] XLSForm uploads to KoboToolbox successfully
+- [ ] Form deploys without ODK validation errors
+- [ ] All question types render properly
+
+#### Documentation Standards
+- [ ] README.md documents complete process
+- [ ] Commit messages describe specific changes
+- [ ] Prompt history tracks all interactions
+- [ ] CLAUDE.md updated with lessons learned
+
+### Lessons Learned from This Project
+
+1. **Content extraction is iterative** - First attempts often miss
+   significant portions
+2. **Platform compatibility is complex** - Each system has specific
+   requirements
+3. **CSV formatting is critical** - Small errors cause major failures
+4. **Systematic verification is essential** - Manual cross-checking
+   prevents data loss
+5. **Documentation prevents repetition** - Good docs save time on
+   similar projects
+
+### Emergency Debugging Commands
+```bash
+# Check CSV structure
+python3 -c "import pandas as pd; print(pd.read_csv('survey-questions.csv').shape)"
+
+# Validate column consistency
+grep -o ',' survey-questions.csv | wc -l
+
+# Test XLSForm generation
+python3 create_xlsform.py
+
+# Check for problematic characters
+grep -P '[^\x00-\x7F]' survey-*.csv
+```
