@@ -1,12 +1,12 @@
 list_name,name,label,order
-education_level,no_formal,No formal education,1
-education_level,primary,Primary education,2
-education_level,lower_secondary,Lower secondary education,3
-education_level,upper_secondary,Upper secondary education,4
-education_level,postsecondary_non_tertiary,Postsecondary non-tertiary education,5
-education_level,bachelor,Bachelor's degree,6
-education_level,master,Master's degree,7
-education_level,doctorate,Doctorate or higher,8
+education_level,no_formal,"No formal education (Never attended school)",1
+education_level,primary,"Primary education (e.g. Elementary school, grades 1–5/6)",2
+education_level,lower_secondary,"Lower secondary education (e.g. Middle school, junior high, grades 6–8/9)",3
+education_level,upper_secondary,"Upper secondary education (e.g. High school diploma, A-levels, GED, vocational certificate, trade school diploma)",4
+education_level,postsecondary_non_tertiary,"Postsecondary non-tertiary education (e.g. Community college certificate, diploma, foundation year)",5
+education_level,bachelor,"Bachelor's degree (e.g. BA, BSc, BEng, Bachelor's degree)",6
+education_level,master,"Master's degree (e.g. MA, MSc, MEng, MBA, Master's degree)",7
+education_level,doctorate,"Doctorate or higher (e.g. PhD, EdD, MD, JD, DPhil, professional doctorate)",8
 employment_status,employed_fulltime,Employed full-time,1
 employment_status,employed_parttime,Employed part-time,2
 employment_status,self_employed,Self-employed,3
@@ -16,12 +16,14 @@ employment_status,retired,Retired,6
 employment_status,student,Student,7
 employment_status,homemaker,Homemaker or caring for family,8
 employment_status,unable_disability,Unable to work due to disability/illness,9
+employment_status,other,Other specify:,10
 organisation_type,academia,Academia,1
 organisation_type,government,Government,2
 organisation_type,ngo,NGO,3
 organisation_type,private_sector,Private sector,4
 organisation_type,independent_consultant,Independent consultant,5
 organisation_type,multilateral,Multi-lateral organisation,6
+organisation_type,other,Other specify:,7
 barrier_scale,not_barrier,Not a barrier,1
 barrier_scale,barrier,A barrier,2
 barrier_scale,dont_know,I don't know,3
@@ -262,10 +264,10 @@ data_storage,machine_readable,"Machine-readable files (CSV, JSON)",3
 data_storage,database,Relational database,4
 data_storage,dont_know,Don't know,5
 data_storage,no_data,No data to store,6
-doc_writing,word_no_code,Word processors without code,1
-doc_writing,word_copy_paste,Word processors with copy/paste code output,2
-doc_writing,latex_copy_paste,LaTeX with copy/paste code output,3
-doc_writing,literate_prog,Literate programming notebooks,4
+doc_writing,word_no_code,"Word processors (e.g., MS Word, Google Docs) without code",1
+doc_writing,word_copy_paste,"Word processors (e.g., MS Word, Google Docs) with copy/paste code output",2
+doc_writing,latex_copy_paste,"LaTeX with copy/paste code output",3
+doc_writing,literate_prog,"Literate programming notebooks (e.g., R Markdown, Quarto, Jupyter)",4
 ide_list,rstudio,RStudio,1
 ide_list,positron,Positron,2
 ide_list,vscode,Visual Studio Code (VS Code),3
@@ -278,10 +280,10 @@ ide_list,matlab_ide,MATLAB IDE,9
 ide_list,emacs,Emacs,10
 ide_list,vim,Vim,11
 ide_list,none,None of the above,12
-ide_exp,never,Never used an IDE,1
-ide_exp,occasional,Occasionally used for basic editing,2
-ide_exp,regular,Regularly used for own projects,3
-ide_exp,extensive,Extensively used for collaborative development,4
+ide_exp,never,"I have never used an IDE.",1
+ide_exp,occasional,"I have occasionally used an IDE for basic code editing or running scripts.",2
+ide_exp,regular,"I regularly use an IDE for my own projects, taking advantage of features like code completion, debugging, or version control integration.",3
+ide_exp,extensive,"I use IDEs extensively for collaborative development, customizing environments, using advanced features (e.g., remote development, extensions/plugins), and optimizing workflow.",4
 cli_exp,never,"I have never used the command-line interface (Terminal on Mac, Windows Terminal on Windows).",1
 cli_exp,occasional,"I have used the CLI occasionally for basic tasks (e.g. navigating folders, running simple commands).",2
 cli_exp,regular,"I use the CLI regularly for my own projects, including scripting and automating tasks.",3

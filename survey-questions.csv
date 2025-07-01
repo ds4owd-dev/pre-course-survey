@@ -33,17 +33,23 @@ select_one data_storage,data_format,In which format do you store the majority of
 select_one doc_writing,narrative_docs,Which of these best describes how you write narrative documents that include text and analysis?,no,,,,,,,,,,,,,,,,,,
 select_multiple ide_list,ide_used,Which of the following Integrated Development Environments (IDEs) have you used?,no,,,,,,,appearance,,,,,,,,,
 select_one ide_exp,ide_experience,Which of these best describes your experience with using IDEs?,no,,,,,,,,,,,,,,,,,,
-select_one cli_exp,cli_usage,Which of these best describes your current usage of the default command-line interface?,no,,,,,,,,,,,,,,,,,,
+select_one cli_exp,cli_usage,\"Which of these best describes your current usage of the default command-line interface (CLI)?
+
+On Mac: The default CLI app is Terminal, and the default shell is Zsh (you may also use Bash or other shells)
+
+On Windows: The default CLI app is Windows Terminal, which can run Command Prompt, PowerShell, and Bash (via Windows Subsystem for Linux)
+
+How would you describe your experience?\",no,,,,,,,,,,,,,,,,,,
 select_multiple llm_tools,llm_platforms,Which Large Language Model tools/platforms have you used?,no,,,,,,,appearance,,,,,,,,,
 note,llm_usage_intro,How frequently do you use Large Language Models for the following tasks?,,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_summarization,Summarization,no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_translation,Translation,no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_qa,Question Answering,no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_conversation,Conversational Assistance,no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_data_analysis,Data Analysis/Extraction,no,,,,,,,,,,,,,,,,,,
+select_one llm_freq,llm_summarization,"For Summarization (e.g., \"Summarize this research paper in 200 words.\")",no,,,,,,,,,,,,,,,,,,
+select_one llm_freq,llm_translation,"Translation (e.g., \"Translate this email from English to German.\")",no,,,,,,,,,,,,,,,,,,
+select_one llm_freq,llm_qa,"Question Answering (e.g., \"What are the symptoms of vitamin D deficiency?\")",no,,,,,,,,,,,,,,,,,,
+select_one llm_freq,llm_conversation,"Conversational Assistance / Chatbots (e.g., \"Help me with my online order\")",no,,,,,,,,,,,,,,,,,,
+select_one llm_freq,llm_data_analysis,"Data Analysis / Extraction (e.g., \"Extract all dates and names from this contract.\")",no,,,,,,,,,,,,,,,,,,
 select_one llm_freq,llm_content_gen,"Content Generation (e.g. images, videos)",no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_learning,Learning/Teaching/Tutoring,no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_automation,Agentic Task Automation,no,,,,,,,,,,,,,,,,,,
+select_one llm_freq,llm_learning,"Learning/Teaching/Tutoring (e.g., \"Explain the Pythagorean theorem.\")",no,,,,,,,,,,,,,,,,,,
+select_one llm_freq,llm_automation,"Agentic Task Automation (i.e. LLM acts autonomously or semi-autonomously to perform tasks)",no,,,,,,,,,,,,,,,,,,
 end group,,,,,,,,,,,,,,,,,,,,,
 begin group,project_participation,Project and Course Participation,,,,,,,,,,,,,,,,,,,
 text,learning_goals,What do you want to know or be able to do that you don't know or can't do right now?,no,,,,,,,paragraph,,,,,,,,,
