@@ -173,17 +173,177 @@ participation in this course?
 - I have written programs for own use
 - I have written and maintained larger software
 
-## Other Technical Skills
+## Other Programming Languages
 
-**Note:** The survey includes additional questions about:
+**Question Type:** Multiple Select (Checkboxes)  
+**Required:** No  
+**Text:** Which other programming languages / software do you have
+experience in?  
+**Options:**
 
-- Other programming languages
-- Git/GitHub experience
-- Data storage formats experience
-- Narrative document writing tools
-- IDE usage
-- Command-line interface experience
-- Large Language Model usage
+- Java
+- JavaScript
+- C++
+- C
+- C#
+- Dart (Flutter)
+- Go (Golang)
+- Rust
+- Swift
+- TypeScript
+- Haskell
+- Ruby
+- Bash
+- Julia
+- CSS
+- SQL
+- SAS
+- Matlab
+- STATA
+- SPSS
+- NVivo
+- MAXQDA
+- None of the above
+
+## Git Experience
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Which of these best describes your experience with using Git?  
+**Options:**
+
+- Never used Git
+- Used occasionally for basic tasks
+- Used regularly for own projects
+- Used extensively for collaborative development
+
+## GitHub Experience
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Which of these best describes your experience with using
+GitHub?  
+**Options:**
+
+- Never used GitHub
+- Occasionally viewed/downloaded repositories
+- Regularly managed own repositories
+- Extensively used for collaborative development
+
+## Data Storage Formats
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** In which format do you store the majority of your data?  
+**Options:**
+
+- Physical notebooks on paper
+- Spreadsheet-based format (Excel, Google Sheets)
+- Machine-readable files (CSV, JSON)
+- Relational database
+- Don't know
+- No data to store
+
+## Narrative Document Writing
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Which of these best describes how you write narrative
+documents that include text and analysis?  
+**Options:**
+
+- Word processors without code
+- Word processors with copy/paste code output
+- LaTeX with copy/paste code output
+- Literate programming notebooks
+
+## IDE Usage
+
+**Question Type:** Multiple Select (Checkboxes)  
+**Required:** No  
+**Text:** Which of the following Integrated Development Environments
+(IDEs) have you used?  
+**Options:**
+
+- RStudio
+- VS Code
+- PyCharm
+- JupyterLab
+- Other IDEs
+
+## IDE Experience Level
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Which of these best describes your experience with using IDEs?  
+**Options:**
+
+- Never used an IDE
+- Occasionally used for basic editing
+- Regularly used for own projects
+- Extensively used for collaborative development
+
+## Command-Line Interface Usage
+
+**Question Type:** Multiple Choice  
+**Required:** No  
+**Text:** Which of these best describes your current usage of the
+default command-line interface?  
+**Options:**
+
+- I have never used the command-line interface (Terminal on Mac,
+  Windows Terminal on Windows).
+- I have used the CLI occasionally for basic tasks (e.g., navigating
+  folders, running simple commands).
+- I use the CLI regularly for my own projects, including scripting and
+  automating tasks.
+- I use the CLI extensively for advanced workflows, system
+  administration, or integrating with other tools (e.g., SSH,
+  environment management, custom scripts).
+
+## Large Language Model Tools
+
+**Question Type:** Multiple Select (Checkboxes)  
+**Required:** No  
+**Text:** Which Large Language Model tools/platforms have you used?  
+**Options:**
+
+- ChatGPT (OpenAI)
+- Claude (Anthropic)
+- Claude Code (Anthropic)
+- Gemini (Google, formerly Bard)
+- NotebookLM (Google)
+- Copilot for IDEs
+- Copilot for Microsoft 365
+- Perplexity AI
+- Llama (Meta)
+- Mistral AI
+- Other LLM tools (32 options total)
+
+## LLM Usage for Tasks
+
+**Question Type:** Grid/Matrix  
+**Required:** No  
+**Text:** How frequently do you use Large Language Models for the
+following tasks?
+
+**Rating Scale:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
+**Tasks to rate:**
+
+- Summarization
+- Translation
+- Question Answering
+- Conversational Assistance
+- Data Analysis/Extraction
+- Content Generation
+- Learning/Teaching/Tutoring
+- Agentic Task Automation
 
 # Project and Course Participation
 

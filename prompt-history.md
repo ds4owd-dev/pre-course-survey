@@ -18,3 +18,17 @@ Write a CLAUDE.md for the project and include
 - that all prompts must be stored in a prompt-history.md with only the date and time of the prompt, not the response.
 - all content in markdown and Quarto markdown must be wrapped at 72
 - best practices for creating KoboToolbox surveys using
+
+2025-01-07 10:52:00 - commit
+
+2025-01-07 10:55:00 - Also extract all questions and answers for the section where you say: ## Other Technical Skills
+
+**Note:** The survey includes additional questions about:
+
+- Other programming languages
+- Git/GitHub experience
+- Data storage formats experience
+- Narrative document writing tools
+- IDE usage
+- Command-line interface experience
+- Large Language Model usage

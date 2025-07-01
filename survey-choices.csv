@@ -225,3 +225,72 @@ countries,VNM,Viet Nam,193
 countries,YEM,Yemen,194
 countries,ZMB,Zambia,195
 countries,ZWE,Zimbabwe,196
+prog_languages,java,Java,1
+prog_languages,javascript,JavaScript,2
+prog_languages,cpp,C++,3
+prog_languages,c,C,4
+prog_languages,csharp,C#,5
+prog_languages,dart,Dart (Flutter),6
+prog_languages,go,Go (Golang),7
+prog_languages,rust,Rust,8
+prog_languages,swift,Swift,9
+prog_languages,typescript,TypeScript,10
+prog_languages,haskell,Haskell,11
+prog_languages,ruby,Ruby,12
+prog_languages,bash,Bash,13
+prog_languages,julia,Julia,14
+prog_languages,css,CSS,15
+prog_languages,sql,SQL,16
+prog_languages,sas,SAS,17
+prog_languages,matlab,Matlab,18
+prog_languages,stata,STATA,19
+prog_languages,spss,SPSS,20
+prog_languages,nvivo,NVivo,21
+prog_languages,maxqda,MAXQDA,22
+prog_languages,none,None of the above,23
+git_exp,never,Never used Git,1
+git_exp,occasional,Used occasionally for basic tasks,2
+git_exp,regular,Used regularly for own projects,3
+git_exp,extensive,Used extensively for collaborative development,4
+github_exp,never,Never used GitHub,1
+github_exp,viewed,Occasionally viewed/downloaded repositories,2
+github_exp,managed,Regularly managed own repositories,3
+github_exp,collab,Extensively used for collaborative development,4
+data_storage,paper,Physical notebooks on paper,1
+data_storage,spreadsheet,Spreadsheet-based format (Excel Google Sheets),2
+data_storage,machine_readable,Machine-readable files (CSV JSON),3
+data_storage,database,Relational database,4
+data_storage,dont_know,Don't know,5
+data_storage,no_data,No data to store,6
+doc_writing,word_no_code,Word processors without code,1
+doc_writing,word_copy_paste,Word processors with copy/paste code output,2
+doc_writing,latex_copy_paste,LaTeX with copy/paste code output,3
+doc_writing,literate_prog,Literate programming notebooks,4
+ide_list,rstudio,RStudio,1
+ide_list,vscode,VS Code,2
+ide_list,pycharm,PyCharm,3
+ide_list,jupyterlab,JupyterLab,4
+ide_list,other,Other IDEs,5
+ide_exp,never,Never used an IDE,1
+ide_exp,occasional,Occasionally used for basic editing,2
+ide_exp,regular,Regularly used for own projects,3
+ide_exp,extensive,Extensively used for collaborative development,4
+cli_exp,never,I have never used the command-line interface (Terminal on Mac Windows Terminal on Windows).,1
+cli_exp,occasional,I have used the CLI occasionally for basic tasks (e.g. navigating folders running simple commands).,2
+cli_exp,regular,I use the CLI regularly for my own projects including scripting and automating tasks.,3
+cli_exp,extensive,I use the CLI extensively for advanced workflows system administration or integrating with other tools (e.g. SSH environment management custom scripts).,4
+llm_tools,chatgpt,ChatGPT (OpenAI),1
+llm_tools,claude,Claude (Anthropic),2
+llm_tools,claude_code,Claude Code (Anthropic),3
+llm_tools,gemini,Gemini (Google formerly Bard),4
+llm_tools,notebooklm,NotebookLM (Google),5
+llm_tools,copilot_ide,Copilot for IDEs,6
+llm_tools,copilot_365,Copilot for Microsoft 365,7
+llm_tools,perplexity,Perplexity AI,8
+llm_tools,llama,Llama (Meta),9
+llm_tools,mistral,Mistral AI,10
+llm_tools,other,Other LLM tools,11
+llm_freq,never,I have not used any LLMs.,1
+llm_freq,occasional,I use LLMs occasionally when needed (e.g once a week).,2
+llm_freq,regular,I regularly use LLMs to improve efficiency (e.g. once a day).,3
+llm_freq,rely,I rely on LLMs for completion (e.g. several times a day).,4
