@@ -257,8 +257,8 @@ github_exp,viewed,Occasionally viewed/downloaded repositories,2
 github_exp,managed,Regularly managed own repositories,3
 github_exp,collab,Extensively used for collaborative development,4
 data_storage,paper,Physical notebooks on paper,1
-data_storage,spreadsheet,Spreadsheet-based format (Excel Google Sheets),2
-data_storage,machine_readable,Machine-readable files (CSV JSON),3
+data_storage,spreadsheet,"Spreadsheet-based format (Excel, Google Sheets)",2
+data_storage,machine_readable,"Machine-readable files (CSV, JSON)",3
 data_storage,database,Relational database,4
 data_storage,dont_know,Don't know,5
 data_storage,no_data,No data to store,6
@@ -282,14 +282,14 @@ ide_exp,never,Never used an IDE,1
 ide_exp,occasional,Occasionally used for basic editing,2
 ide_exp,regular,Regularly used for own projects,3
 ide_exp,extensive,Extensively used for collaborative development,4
-cli_exp,never,I have never used the command-line interface (Terminal on Mac Windows Terminal on Windows).,1
-cli_exp,occasional,I have used the CLI occasionally for basic tasks (e.g. navigating folders running simple commands).,2
-cli_exp,regular,I use the CLI regularly for my own projects including scripting and automating tasks.,3
-cli_exp,extensive,I use the CLI extensively for advanced workflows system administration or integrating with other tools (e.g. SSH environment management custom scripts).,4
+cli_exp,never,"I have never used the command-line interface (Terminal on Mac, Windows Terminal on Windows).",1
+cli_exp,occasional,"I have used the CLI occasionally for basic tasks (e.g. navigating folders, running simple commands).",2
+cli_exp,regular,"I use the CLI regularly for my own projects, including scripting and automating tasks.",3
+cli_exp,extensive,"I use the CLI extensively for advanced workflows, system administration, or integrating with other tools (e.g. SSH, environment management, custom scripts).",4
 llm_tools,chatgpt,ChatGPT (OpenAI),1
 llm_tools,claude,Claude (Anthropic),2
 llm_tools,claude_code,Claude Code (Anthropic),3
-llm_tools,gemini,Gemini (Google formerly Bard),4
+llm_tools,gemini,"Gemini (Google, formerly Bard)",4
 llm_tools,notebooklm,NotebookLM (Google),5
 llm_tools,copilot_ide,Copilot for IDEs,6
 llm_tools,copilot_365,Copilot for Microsoft 365,7
@@ -326,6 +326,6 @@ llm_freq,regular,I regularly use LLMs to improve efficiency (e.g. once a day).,3
 llm_freq,rely,I rely on LLMs for completion (e.g. several times a day).,4
 data_available,yes,Yes,1
 data_available,no,No,2
-mentorship,mentor,Yes as a mentor,1
-mentorship,mentee,Yes as a mentee,2
-mentorship,not_interested,No I am not interested,3
+mentorship,mentor,"Yes, as a mentor",1
+mentorship,mentee,"Yes, as a mentee",2
+mentorship,not_interested,"No, I am not interested",3
