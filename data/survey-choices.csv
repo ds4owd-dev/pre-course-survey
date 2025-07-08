@@ -279,6 +279,24 @@ ide_list,sublime,Sublime Text
 ide_list,matlab_ide,MATLAB IDE
 ide_list,emacs,Emacs
 ide_list,vim,Vim
+ide_list,cursor,Cursor
+ide_list,windsurf,Windsurf
+ide_list,zed,Zed
+ide_list,fleet,Fleet (JetBrains)
+ide_list,neovim,Neovim
+ide_list,intellij,IntelliJ IDEA
+ide_list,webstorm,WebStorm
+ide_list,visual_studio,Visual Studio
+ide_list,nova,Nova
+ide_list,codespaces,GitHub Codespaces
+ide_list,replit,Replit
+ide_list,gitpod,Gitpod
+ide_list,codesandbox,CodeSandbox
+ide_list,android_studio,Android Studio
+ide_list,xcode,Xcode
+ide_list,notepadpp,Notepad++
+ide_list,doom_emacs,Doom Emacs
+ide_list,helix,Helix
 ide_list,none,None of the above
 ide_exp,never,I have never used an IDE.
 ide_exp,occasional,I have occasionally used an IDE for basic code editing or running scripts.

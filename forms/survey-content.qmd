@@ -397,6 +397,24 @@ documents that include text and analysis?
 - MATLAB IDE
 - Emacs
 - Vim
+- Cursor
+- Windsurf
+- Zed
+- Fleet (JetBrains)
+- Neovim
+- IntelliJ IDEA
+- WebStorm
+- Visual Studio
+- Nova
+- GitHub Codespaces
+- Replit
+- Gitpod
+- CodeSandbox
+- Android Studio
+- Xcode
+- Notepad++
+- Doom Emacs
+- Helix
 - None of the above
 
 ## IDE Experience Level
