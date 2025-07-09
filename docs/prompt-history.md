@@ -34,3 +34,5 @@ Write a CLAUDE.md for the project and include
 - Large Language Model usage
 
 2025-01-07 11:10:00 - For questions on IDE usage, LLM tools, extract all options. For project and course participation section. Extract all questions, text and response levels.
+
+2025-01-09 14:30:00 - Update all files in @data/ and also the @forms/survey-content.qmd file from the updated @forms/ds4owd_precourse_survey.xlsx
