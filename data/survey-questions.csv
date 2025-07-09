@@ -1,56 +1,104 @@
-type,name,label,required,required_message,hint,relevant,constraint,constraint_message,calculation,repeat_count,appearance,default,choice_filter,media::image,media::audio,media::video,body::accuracyThreshold,body::accuracyMessage,body::requireAccuracy,body::jr:requiredMsg,notes
-begin group,personal_info,Personal Information,,,,,,,,,,,,,,,,,,,
-text,github_username,Please provide your GitHub username,yes,This field is required,,,,,,,,,,,,,,,,,
-text,orcid_id,"Please provide your ORCID iD (e.g. 0000-0003-2196-5015)",yes,This field is required,,,"regex(., '^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$')",Please enter a valid ORCID iD format,,,,,,,,,,,,,
-text,email,Your email address,yes,This field is required,,,"regex(., '^[^@]+@[^@]+\.[^@]+$')",Please enter a valid email address,,,,,,,,,,,,,
-text,first_name,First Name,yes,This field is required,,,,,,,,,,,,,,,,,
-text,surname,Surname,yes,This field is required,,,,,,,,,,,,,,,,,
-select_one countries,country_residence,Country of Residence,no,,,,,,,,,,,,,,,,,,
-end group,,,,,,,,,,,,,,,,,,,,,
-begin group,education_employment,Education and Employment,,,,,,,,,,,,,,,,,,,
-select_one education_level,education,Education Level,no,,,,,,,,,,,,,,,,,,
-select_one employment_status,employment_situation,What is your current employment situation?,no,,,,,,,,,,,,,,,,,,
-text,organisation_name,If employed or self-employed what is the name of the organisation / instituiton?,no,,,${employment_situation}='employed_fulltime' or ${employment_situation}='employed_parttime' or ${employment_situation}='self_employed',,,,,,,,,,,,,
-select_one organisation_type,org_type,If employed or self-employed what best describes the organisation you work for?,no,,,${employment_situation}='employed_fulltime' or ${employment_situation}='employed_parttime' or ${employment_situation}='self_employed',,,,,,,,,,,,,
-end group,,,,,,,,,,,,,,,,,,,,,
-begin group,barriers,Barriers to Participation,,,,,,,,,,,,,,,,,,,
-note,barriers_intro,Which of the following barriers apply to your complete participation in this course?,,,,,,,,,,,,,,,,,,,
-select_one barrier_scale,barrier_time,Time availability,no,,,,,,,,,,,,,,,,,,
-select_one barrier_scale,barrier_supervisor,My supervisors interests,no,,,,,,,,,,,,,,,,,,
-select_one barrier_scale,barrier_internet,Access to stable internet,no,,,,,,,,,,,,,,,,,,
-select_one barrier_scale,barrier_electricity,Access to electricity,no,,,,,,,,,,,,,,,,,,
-select_one barrier_scale,barrier_computer,Access to computer/laptop,no,,,,,,,,,,,,,,,,,,
-select_one barrier_scale,barrier_screen,Access to second external screen,no,,,,,,,,,,,,,,,,,,
-end group,,,,,,,,,,,,,,,,,,,,,
-begin group,technical_experience,Technical Experience,,,,,,,,,,,,,,,,,,,
-select_one programming_exp,prog_general,Experience with programming in general,no,,,,,,,,,,,,,,,,,,
-select_one programming_exp,prog_r,Experience with programming in R,no,,,,,,,,,,,,,,,,,,
-select_one programming_exp,prog_python,Experience with programming in Python,no,,,,,,,,,,,,,,,,,,
-select_multiple prog_languages,other_languages,Which other programming languages / software do you have experience in?,no,,,,,,,appearance,,,,,,,,,
-select_one git_exp,git_experience,Which of these best describes your experience with using Git?,no,,,,,,,,,,,,,,,,,,
-select_one github_exp,github_experience,Which of these best describes your experience with using GitHub?,no,,,,,,,,,,,,,,,,,,
-select_one data_storage,data_format,In which format do you store the majority of your data?,no,,,,,,,,,,,,,,,,,,
-select_one doc_writing,narrative_docs,Which of these best describes how you write narrative documents that include text and analysis?,no,,,,,,,,,,,,,,,,,,
-select_multiple ide_list,ide_used,Which of the following Integrated Development Environments (IDEs) have you used?,no,,,,,,,appearance,,,,,,,,,
-select_one ide_exp,ide_experience,Which of these best describes your experience with using IDEs?,no,,,,,,,,,,,,,,,,,,
-select_one cli_exp,cli_usage,"Which of these best describes your current usage of the default command-line interface (CLI)? On Mac: The default CLI app is Terminal and the default shell is Zsh (you may also use Bash or other shells). On Windows: The default CLI app is Windows Terminal which can run Command Prompt PowerShell and Bash (via Windows Subsystem for Linux). How would you describe your experience?",no,,,,,,,,,,,,,,,,,,
-select_multiple llm_tools,llm_platforms,Which Large Language Model tools/platforms have you used?,no,,,,,,,appearance,,,,,,,,,
-note,llm_usage_intro,How frequently do you use Large Language Models for the following tasks?,,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_summarization,"For Summarization (e.g., \"Summarize this research paper in 200 words.\")",no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_translation,"Translation (e.g., \"Translate this email from English to German.\")",no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_qa,"Question Answering (e.g., \"What are the symptoms of vitamin D deficiency?\")",no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_conversation,"Conversational Assistance / Chatbots (e.g., \"Help me with my online order\")",no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_data_analysis,"Data Analysis / Extraction (e.g., \"Extract all dates and names from this contract.\")",no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_content_gen,"Content Generation (e.g. images, videos)",no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_learning,"Learning/Teaching/Tutoring (e.g., \"Explain the Pythagorean theorem.\")",no,,,,,,,,,,,,,,,,,,
-select_one llm_freq,llm_automation,"Agentic Task Automation (i.e. LLM acts autonomously or semi-autonomously to perform tasks)",no,,,,,,,,,,,,,,,,,,
-end group,,,,,,,,,,,,,,,,,,,,,
-begin group,project_participation,Project and Course Participation,,,,,,,,,,,,,,,,,,,
-text,learning_goals,What do you want to know or be able to do that you don't know or can't do right now?,no,,,,,,,paragraph,,,,,,,,,
-select_one data_available,data_availability,Can you identify a dataset of your own or your organisation that you can use for the capstone project report and share publicly as open data (see details in survey description Step 3)?,no,,,,,,,,,,,,,,,,,,
-select_one mentorship,mentorship_interest,"We are launching a mentorship programme that brings together participants with different levels of experience, so they can support and learn from each other in small groups. Are you interested in joining this mentorship programme?",no,,,,,,,,,,,,,,,,,,
-end group,,,,,,,,,,,,,,,,,,,,,
-begin group,agreements,Agreements and Consent,,,,,,,,,,,,,,,,,,,
-select_one yes_only,code_conduct,"I acknowledge that I have read and understood the code of conduct for this course, and I commit to complying with its guidelines and principles to ensure a respectful and ethical learning environment for all participants. Available at: https://ds4owd-002.github.io/website/code_of_conduct.html",yes,You must acknowledge the Code of Conduct,,,,,,,,,,,,,,,,,
-select_one yes_only,data_privacy,"I agree that by submitting this form, I consent to my data being used for course administration and management, accessed only by instructors, securely stored, not shared with third parties, anonymized for reporting, and potentially used for future research to improve the course. For reporting purposes, your personal identifiers (ORCID iD, GitHub username) will be removed from the data. The anonymized data may be used for future research, scientific publications, and analysis to improve the course.",yes,You must provide consent,,,,,,,,,,,,,,,,,
-end group,,,,,,,,,,,,,,,,,,,,,
+type,name,label,required,required_message,hint,relevant,constraint,constraint_message,appearance,default
+note,introduction,"Thank you for your interest in this course! Your course instructors are looking forward to meeting you. We will meet on Zoom for 10 modules, starting on **Thursday, 11th September, from 14:00 to 16:30 CET**.
+
+Details about the content of the course can be found on the course website: [https://ds4owd-002.github.io/website/](https://ds4owd-002.github.io/website/)
+
+**How do I sign up?**
+
+To sign up for the course, please complete the following four steps:
+
+**Step 1: Get an account on GitHub.**
+
+To set up an account on GitHub, follow these general steps:
+
+1. Go to the GitHub website at [https://github.com/](https://github.com/).
+2. Click on the “Sign up” button on the top right corner of the page.
+3. Enter your preferred username, email address, and password in the provided fields. (Find advice on choosing a good GitHub username here: [https://happygitwithr.com/github-acct](https://happygitwithr.com/github-acct))
+4. Choose whether you want to receive updates and announcements via email.
+5. Complete the verification process by solving a puzzle and entering a verification code sent to your email.
+
+**Step 2: Register for an ORCID iD**
+
+Create your ORCID iD at: [https://orcid.org/register](https://orcid.org/register)
+
+**Step 3: Identify a dataset you want to work with for the capstone project**
+
+This course follows the principle of ""open by default"". All educational resources are published openly using permissive licenses for reuse. We also apply this principle to the code and data used in the course.
+
+At the end of the course, you will complete a capstone project, which involves analyzing a dataset of your choice. We encourage you to use data available from your company, government institution, research institute, or other personal sources. However, this requires the data to be shared openly, which may not always be possible if it is sensitive or contains personal information. In such cases, you may use a dataset that has already been published openly.
+
+The pre-course survey will help us identify who has their own dataset and who does not. We will begin working with data starting from Module 5.
+
+You can find examples of completed reports from the first iteration of this course here: [https://openwashdata.org/pages/academy/graduates/](https://openwashdata.org/pages/academy/graduates/)
+
+**Step 4: Complete this pre-course survey**
+
+By completing this pre-course survey, you will be registered for the course. We will add you to an email list to keep you informed about the next steps.",,,,,,,,
+begin group,personal_info,Personal Information,,,,,,,,
+text,github_username,Please provide your GitHub username,yes,,,,,,,
+text,orcid_id,Please provide your ORCID iD (e.g. 0000-0003-2196-5015),yes,,,,"regex(., '^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$')",Please enter a valid ORCID iD format,,
+text,email,Your email address,yes,,,,"regex(., '^[^@]+@[^@]+.[^@]+$')",Please enter a valid email address,,
+text,first_name,First Name,yes,,,,,,,
+text,surname,Surname,yes,,,,,,,
+select_one list_gender,gender,What is your gender?,no,,This question is optional.,,,,,
+text,gender_self_describe,Prefer to self-describe:,no,,,${gender} = 'self_describe',,,,
+select_one list_age_group,age_group,What is your age group?,no,,This question is optional.,,,,,
+select_one list_accessibility,accessibility_needs,Do you have any accessibility needs we should be aware of?,no,,This question is optional.,,,,,
+text,accessibility_specify,Yes (please specify):,no,,,${accessibility_needs} = 'yes',,,,
+select_one countries,country_residence,Country of Residence,yes,,,,,,minimal,
+end group,,,,,,,,,,
+begin group,education_employment,Education and Employment,,,,,,,,
+select_one education_level,education,Education Level,yes,,,,,,,
+select_one employment_status,employment_situation,What is your current employment situation?,yes,,,,,,,
+text,organisation_name,If employed or self-employed what is the name of the organisation / institution?,yes,,,${employment_situation}='employed_fulltime' or ${employment_situation}='employed_parttime' or ${employment_situation}='self_employed',,,,
+select_one organisation_type,org_type,If employed or self-employed what best describes the organisation you work for?,yes,,,${employment_situation}='employed_fulltime' or ${employment_situation}='employed_parttime' or ${employment_situation}='self_employed',,,,
+end group,,,,,,,,,,
+begin group,barriers,Barriers to Participation,,,,,,,,
+note,barriers_intro,Which of the following barriers apply to your complete participation in this course?,,,,,,,,
+select_one barrier_scale,barrier_time,Time availability,yes,,,,,,,
+select_one barrier_scale,barrier_supervisor,My supervisors interests,yes,,,,,,,
+select_one barrier_scale,barrier_internet,Access to stable internet,yes,,,,,,,
+select_one barrier_scale,barrier_electricity,Access to electricity,yes,,,,,,,
+select_one barrier_scale,barrier_computer,Access to computer/laptop,yes,,,,,,,
+select_one barrier_scale,barrier_screen,Access to second external screen,yes,,,,,,,
+end group,,,,,,,,,,
+begin group,technical_experience,Technical Experience,,,,,,,,
+select_one programming_exp,prog_general,Experience with programming in general,yes,,,,,,,
+select_one programming_exp,prog_r,Experience with programming in R,yes,,,,,,,
+select_one programming_exp,prog_python,Experience with programming in Python,yes,,,,,,,
+select_multiple prog_languages,other_languages,Which other programming languages / software do you have experience in?,yes,,,,"if(selected(., ""none""), count-selected(.)=1, count-selected(.)>=1)","You can't select ""None"" and other options at the same time.",,
+select_one git_exp,git_experience,Which of these best describes your experience with using Git?,yes,,,,,,,
+select_one github_exp,github_experience,Which of these best describes your experience with using GitHub?,yes,,,,,,,
+select_one data_storage,data_format,In which format do you store the majority of your data?,yes,,,,,,,
+select_one doc_writing,narrative_docs,Which of these best describes how you write narrative documents that include text and analysis?,yes,,,,,,,
+select_multiple ide_list,ide_used,Which of the following Integrated Development Environments (IDEs) have you used?,yes,,,,"if(selected(., ""none""), count-selected(.)=1, count-selected(.)>=1)","You can't select ""None"" and other options at the same time.",,
+select_one ide_exp,ide_experience,Which of these best describes your experience with using IDEs?,yes,,,,,,,
+select_one cli_exp,cli_usage,Which of these best describes your current usage of the default command-line interface (CLI)? On Mac: The default CLI app is Terminal and the default shell is Zsh (you may also use Bash or other shells). On Windows: The default CLI app is Windows Terminal which can run Command Prompt PowerShell and Bash (via Windows Subsystem for Linux). How would you describe your experience?,yes,,,,,,,
+select_multiple llm_tools,llm_platforms,Which Large Language Model tools/platforms have you used?,yes,,,,"if(selected(., ""none""), count-selected(.)=1, count-selected(.)>=1)","You can't select ""None"" and other options at the same time.",,
+begin group,llms,How frequently do you use Large Language Models for the following tasks?,,,,"not(selected(${llm_platforms}, 'none'))",,,,
+select_one llm_freq,llm_summarization,"For Summarization (e.g., ""Summarize this research paper in 200 words."")",yes,,,,,,likert,
+select_one llm_freq,llm_translation,"Translation (e.g., ""Translate this email from English to German."")",yes,,,,,,likert,
+select_one llm_freq,llm_qa,"Question Answering (e.g., ""What are the symptoms of vitamin D deficiency?"")",yes,,,,,,likert,
+select_one llm_freq,llm_conversation,"Conversational Assistance / Chatbots (e.g., ""Help me with my online order"")",yes,,,,,,likert,
+select_one llm_freq,llm_data_analysis,"Data Analysis / Extraction (e.g., ""Extract all dates and names from this contract."")",yes,,,,,,likert,
+select_one llm_freq,llm_content_gen,"Content Generation (e.g. images, videos)",yes,,,,,,likert,
+select_one llm_freq,llm_learning,"Learning/Teaching/Tutoring (e.g., ""Explain the Pythagorean theorem."")",yes,,,,,,likert,
+select_one llm_freq,llm_automation,Agentic Task Automation (i.e. LLM acts autonomously or semi-autonomously to perform tasks),yes,,,,,,likert,
+end group,llms,,,,,,,,,
+select_one list_password_storage,password_storage,How do you usually store your passwords or credentials?,yes,,Select the option that best describes your usual practice.,,,,,
+select_one list_web_browser,web_browser,Which web browser do you use most often?,yes,,,,,,,
+text,web_browser_other,Other (please specify):,yes,,,${web_browser} = 'other',,,,
+select_one yesno,use_bookmarks,Do you use browser bookmarks?,yes,,,,,,,
+select_one yesno,use_note_taking_tool,Do you use a note-taking tool?,yes,,,,,,,
+text,note_taking_tool_specify,Which tool do you use?,yes,,,${use_note_taking_tool} = 'yes',,,,
+end group,,,,,,,,,,
+begin group,project_participation,Project and Course Participation,,,,,,,,
+text,learning_goals,What do you want to know or be able to do that you don't know or can't do right now?,yes,,,,,,,
+select_one yesno,data_availability,Can you identify a dataset of your own or your organisation that you can use for the capstone project report and share publicly as open data (see details in survey description Step 3)?,yes,,,,,,,
+select_one mentorship,mentorship_interest,"We are launching a mentorship programme that brings together participants with different levels of experience, so they can support and learn from each other in small groups. Are you interested in joining this mentorship programme?",yes,,,,,,,
+end group,,,,,,,,,,
+select_one yesnomoreinfo,coauthorship,I agree to be listed as a co-author of the open dataset generated from this course. I understand that my authorship will be linked to my ORCID iD to acknowledge my contribution.,yes,,,,,,,
+begin group,agreements,Agreements and Consent,,,,,,,,
+select_one yes,code_conduct,"I acknowledge that I have read and understood the code of conduct for this course, and I commit to complying with its guidelines and principles to ensure a respectful and ethical learning environment for all participants. Available at: [https://ds4owd-002.github.io/website/code_of_conduct.html](https://ds4owd-002.github.io/website/code_of_conduct.html)",yes,,,,,,,
+select_one yes,data_privacy,"I agree that by submitting this form, I consent to my data being used for course administration and management, accessed only by instructors, securely stored, not shared with third parties, anonymized for reporting, and potentially used for future research to improve the course. For reporting purposes, your personal identifiers (ORCID iD, GitHub username) will be removed from the data. The anonymized data may be used for future research, scientific publications, and analysis to improve the course.",yes,,,,,,,
+end group,,,,,,,,,,
