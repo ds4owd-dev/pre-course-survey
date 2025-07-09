@@ -1,280 +1,360 @@
 list_name,name,label
-barrier_scale,barrier,A barrier
-barrier_scale,dont_know,I don't know
+education_level,no_formal,No formal education (Never attended school)
+education_level,primary,"Primary education (e.g. Elementary school, grades 1–5/6)"
+education_level,lower_secondary,"Lower secondary education (e.g. Middle school, junior high, grades 6–8/9)"
+education_level,upper_secondary,"Upper secondary education (e.g. High school diploma, A-levels, GED, vocational certificate, trade school diploma)"
+education_level,postsecondary_non_tertiary,"Postsecondary non-tertiary education (e.g. Community college certificate, diploma, foundation year)"
+education_level,bachelor,"Bachelor's degree (e.g. BA, BSc, BEng, Bachelor's degree)"
+education_level,master,"Master's degree (e.g. MA, MSc, MEng, MBA, Master's degree)"
+education_level,doctorate,"Doctorate or higher (e.g. PhD, EdD, MD, JD, DPhil, professional doctorate)"
+employment_status,employed_fulltime,Employed full-time
+employment_status,employed_parttime,Employed part-time
+employment_status,self_employed,Self-employed
+employment_status,unemployed_looking,Unemployed and looking for work
+employment_status,unemployed_not_looking,Unemployed and not looking for work
+employment_status,retired,Retired
+employment_status,student,Student
+employment_status,homemaker,Homemaker or caring for family
+employment_status,unable_disability,Unable to work due to disability/illness
+employment_status,other,Other
+organisation_type,academia,Academia
+organisation_type,government,Government
+organisation_type,ngo,NGO
+organisation_type,private_sector,Private sector
+organisation_type,independent_consultant,Independent consultant
+organisation_type,multilateral,Multi-lateral organisation
+organisation_type,other,Other
 barrier_scale,not_barrier,Not a barrier
-cli_exp,extensive,"I use the CLI extensively for advanced workflows, system administration, or integrating with other tools (e.g. SSH, environment management, custom scripts)."
-cli_exp,never,"I have never used the command-line interface (Terminal on Mac, Windows Terminal on Windows)."
-cli_exp,occasional,"I have used the CLI occasionally for basic tasks (e.g. navigating folders, running simple commands)."
-cli_exp,regular,"I use the CLI regularly for my own projects, including scripting and automating tasks."
+barrier_scale,barrier,A barrier
+barrier_scale,dont_know,Don't know
+programming_exp,none,I have none
+programming_exp,few_lines,I have written a few lines
+programming_exp,own_use,I have written programs for own use
+programming_exp,maintained,I have written and maintained larger software
 countries,AFG,Afghanistan
-countries,AGO,Angola
 countries,ALB,Albania
+countries,DZA,Algeria
 countries,AND,Andorra
-countries,ARE,United Arab Emirates
+countries,AGO,Angola
+countries,ATG,Antigua and Barbuda
 countries,ARG,Argentina
 countries,ARM,Armenia
-countries,ATG,Antigua and Barbuda
 countries,AUS,Australia
 countries,AUT,Austria
 countries,AZE,Azerbaijan
-countries,BDI,Burundi
-countries,BEL,Belgium
-countries,BEN,Benin
-countries,BFA,Burkina Faso
-countries,BGD,Bangladesh
-countries,BGR,Bulgaria
-countries,BHR,Bahrain
 countries,BHS,Bahamas
-countries,BIH,Bosnia and Herzegovina
-countries,BLR,Belarus
-countries,BLZ,Belize
-countries,BOL,Bolivia
-countries,BRA,Brazil
+countries,BHR,Bahrain
+countries,BGD,Bangladesh
 countries,BRB,Barbados
-countries,BRN,Brunei Darussalam
+countries,BLR,Belarus
+countries,BEL,Belgium
+countries,BLZ,Belize
+countries,BEN,Benin
 countries,BTN,Bhutan
+countries,BOL,Bolivia
+countries,BIH,Bosnia and Herzegovina
 countries,BWA,Botswana
-countries,CAF,Central African Republic
+countries,BRA,Brazil
+countries,BRN,Brunei Darussalam
+countries,BGR,Bulgaria
+countries,BFA,Burkina Faso
+countries,BDI,Burundi
+countries,CPV,Cabo Verde
+countries,KHM,Cambodia
+countries,CMR,Cameroon
 countries,CAN,Canada
-countries,CHE,Switzerland
+countries,CAF,Central African Republic
+countries,TCD,Chad
 countries,CHL,Chile
 countries,CHN,China
-countries,CIV,Côte d'Ivoire
-countries,CMR,Cameroon
-countries,COD,Congo Democratic Republic
-countries,COG,Congo
 countries,COL,Colombia
 countries,COM,Comoros
-countries,CPV,Cabo Verde
+countries,COG,Congo
+countries,COD,Congo Democratic Republic
 countries,CRI,Costa Rica
+countries,CIV,Côte d'Ivoire
+countries,HRV,Croatia
 countries,CUB,Cuba
 countries,CYP,Cyprus
 countries,CZE,Czechia
-countries,DEU,Germany
+countries,DNK,Denmark
 countries,DJI,Djibouti
 countries,DMA,Dominica
-countries,DNK,Denmark
 countries,DOM,Dominican Republic
-countries,DZA,Algeria
 countries,ECU,Ecuador
 countries,EGY,Egypt
-countries,ERI,Eritrea
-countries,ESP,Spain
-countries,EST,Estonia
-countries,ETH,Ethiopia
-countries,FIN,Finland
-countries,FJI,Fiji
-countries,FRA,France
-countries,FSM,Micronesia
-countries,GAB,Gabon
-countries,GBR,United Kingdom
-countries,GEO,Georgia
-countries,GHA,Ghana
-countries,GIN,Guinea
-countries,GMB,Gambia
-countries,GNB,Guinea-Bissau
+countries,SLV,El Salvador
 countries,GNQ,Equatorial Guinea
+countries,ERI,Eritrea
+countries,EST,Estonia
+countries,SWZ,Eswatini
+countries,ETH,Ethiopia
+countries,FJI,Fiji
+countries,FIN,Finland
+countries,FRA,France
+countries,GAB,Gabon
+countries,GMB,Gambia
+countries,GEO,Georgia
+countries,DEU,Germany
+countries,GHA,Ghana
 countries,GRC,Greece
 countries,GRD,Grenada
 countries,GTM,Guatemala
+countries,GIN,Guinea
+countries,GNB,Guinea-Bissau
 countries,GUY,Guyana
-countries,HND,Honduras
-countries,HRV,Croatia
 countries,HTI,Haiti
+countries,HND,Honduras
 countries,HUN,Hungary
-countries,IDN,Indonesia
+countries,ISL,Iceland
 countries,IND,India
-countries,IRL,Ireland
+countries,IDN,Indonesia
 countries,IRN,Iran
 countries,IRQ,Iraq
-countries,ISL,Iceland
+countries,IRL,Ireland
 countries,ISR,Israel
 countries,ITA,Italy
 countries,JAM,Jamaica
-countries,JOR,Jordan
 countries,JPN,Japan
+countries,JOR,Jordan
 countries,KAZ,Kazakhstan
 countries,KEN,Kenya
-countries,KGZ,Kyrgyzstan
-countries,KHM,Cambodia
 countries,KIR,Kiribati
-countries,KNA,Saint Kitts and Nevis
+countries,PRK,Korea Democratic People's Republic
 countries,KOR,Korea Republic of
 countries,KWT,Kuwait
+countries,KGZ,Kyrgyzstan
 countries,LAO,Lao People's Democratic Republic
+countries,LVA,Latvia
 countries,LBN,Lebanon
+countries,LSO,Lesotho
 countries,LBR,Liberia
 countries,LBY,Libya
-countries,LCA,Saint Lucia
 countries,LIE,Liechtenstein
-countries,LKA,Sri Lanka
-countries,LSO,Lesotho
 countries,LTU,Lithuania
 countries,LUX,Luxembourg
-countries,LVA,Latvia
-countries,MAR,Morocco
-countries,MCO,Monaco
-countries,MDA,Moldova
 countries,MDG,Madagascar
-countries,MDV,Maldives
-countries,MEX,Mexico
-countries,MHL,Marshall Islands
-countries,MKD,North Macedonia
-countries,MLI,Mali
-countries,MLT,Malta
-countries,MMR,Myanmar
-countries,MNE,Montenegro
-countries,MNG,Mongolia
-countries,MOZ,Mozambique
-countries,MRT,Mauritania
-countries,MUS,Mauritius
 countries,MWI,Malawi
 countries,MYS,Malaysia
+countries,MDV,Maldives
+countries,MLI,Mali
+countries,MLT,Malta
+countries,MHL,Marshall Islands
+countries,MRT,Mauritania
+countries,MUS,Mauritius
+countries,MEX,Mexico
+countries,FSM,Micronesia
+countries,MDA,Moldova
+countries,MCO,Monaco
+countries,MNG,Mongolia
+countries,MNE,Montenegro
+countries,MAR,Morocco
+countries,MOZ,Mozambique
+countries,MMR,Myanmar
 countries,NAM,Namibia
+countries,NRU,Nauru
+countries,NPL,Nepal
+countries,NLD,Netherlands
+countries,NZL,New Zealand
+countries,NIC,Nicaragua
 countries,NER,Niger
 countries,NGA,Nigeria
-countries,NIC,Nicaragua
-countries,NLD,Netherlands
+countries,MKD,North Macedonia
 countries,NOR,Norway
-countries,NPL,Nepal
-countries,NRU,Nauru
-countries,NZL,New Zealand
 countries,OMN,Oman
 countries,PAK,Pakistan
+countries,PLW,Palau
+countries,PSE,Palestine
 countries,PAN,Panama
+countries,PNG,Papua New Guinea
+countries,PRY,Paraguay
 countries,PER,Peru
 countries,PHL,Philippines
-countries,PLW,Palau
-countries,PNG,Papua New Guinea
 countries,POL,Poland
-countries,PRK,Korea Democratic People's Republic
 countries,PRT,Portugal
-countries,PRY,Paraguay
-countries,PSE,Palestine
 countries,QAT,Qatar
 countries,ROU,Romania
 countries,RUS,Russian Federation
 countries,RWA,Rwanda
-countries,SAU,Saudi Arabia
-countries,SDN,Sudan
-countries,SEN,Senegal
-countries,SGP,Singapore
-countries,SLB,Solomon Islands
-countries,SLE,Sierra Leone
-countries,SLV,El Salvador
+countries,KNA,Saint Kitts and Nevis
+countries,LCA,Saint Lucia
+countries,VCT,Saint Vincent and the Grenadines
+countries,WSM,Samoa
 countries,SMR,San Marino
-countries,SOM,Somalia
-countries,SRB,Serbia
-countries,SSD,South Sudan
 countries,STP,Sao Tome and Principe
-countries,SUR,Suriname
+countries,SAU,Saudi Arabia
+countries,SEN,Senegal
+countries,SRB,Serbia
+countries,SYC,Seychelles
+countries,SLE,Sierra Leone
+countries,SGP,Singapore
 countries,SVK,Slovakia
 countries,SVN,Slovenia
+countries,SLB,Solomon Islands
+countries,SOM,Somalia
+countries,ZAF,South Africa
+countries,SSD,South Sudan
+countries,ESP,Spain
+countries,LKA,Sri Lanka
+countries,SDN,Sudan
+countries,SUR,Suriname
 countries,SWE,Sweden
-countries,SWZ,Eswatini
-countries,SYC,Seychelles
+countries,CHE,Switzerland
 countries,SYR,Syrian Arab Republic
-countries,TCD,Chad
-countries,TGO,Togo
-countries,THA,Thailand
+countries,TWN,Taiwan
 countries,TJK,Tajikistan
-countries,TKM,Turkmenistan
+countries,TZA,Tanzania
+countries,THA,Thailand
 countries,TLS,Timor-Leste
+countries,TGO,Togo
 countries,TON,Tonga
 countries,TTO,Trinidad and Tobago
 countries,TUN,Tunisia
 countries,TUR,Turkey
+countries,TKM,Turkmenistan
 countries,TUV,Tuvalu
-countries,TWN,Taiwan
-countries,TZA,Tanzania
 countries,UGA,Uganda
 countries,UKR,Ukraine
-countries,URY,Uruguay
+countries,ARE,United Arab Emirates
+countries,GBR,United Kingdom
 countries,USA,United States
+countries,URY,Uruguay
 countries,UZB,Uzbekistan
+countries,VUT,Vanuatu
 countries,VAT,Vatican City
-countries,VCT,Saint Vincent and the Grenadines
 countries,VEN,Venezuela
 countries,VNM,Viet Nam
-countries,VUT,Vanuatu
-countries,WSM,Samoa
 countries,YEM,Yemen
-countries,ZAF,South Africa
 countries,ZMB,Zambia
 countries,ZWE,Zimbabwe
-data_storage,database,Relational database
-data_storage,dont_know,Don't know
-data_storage,machine_readable,"Machine-readable files (CSV, JSON)"
-data_storage,no_data,No data to store
-data_storage,paper,Physical notebooks on paper
-data_storage,spreadsheet,"Spreadsheet-based format (Excel, Google Sheets)"
-doc_writing,latex_copy_paste,LaTeX with copy/paste code output
-doc_writing,literate_prog,"Literate programming notebooks (e.g., R Markdown, Quarto, Jupyter)"
-doc_writing,word_copy_paste,"Word processors (e.g., MS Word, Google Docs) with copy/paste code output"
-doc_writing,word_no_code,"Word processors (e.g., MS Word, Google Docs) without code"
-education_level,bachelor,"Bachelor's degree (e.g. BA, BSc, BEng, Bachelor's degree)"
-education_level,doctorate,"Doctorate or higher (e.g. PhD, EdD, MD, JD, DPhil, professional doctorate)"
-education_level,lower_secondary,"Lower secondary education (e.g. Middle school, junior high, grades 6–8/9)"
-education_level,master,"Master's degree (e.g. MA, MSc, MEng, MBA, Master's degree)"
-education_level,no_formal,No formal education (Never attended school)
-education_level,postsecondary_non_tertiary,"Postsecondary non-tertiary education (e.g. Community college certificate, diploma, foundation year)"
-education_level,primary,"Primary education (e.g. Elementary school, grades 1–5/6)"
-education_level,upper_secondary,"Upper secondary education (e.g. High school diploma, A-levels, GED, vocational certificate, trade school diploma)"
-employment_status,employed_fulltime,Employed full-time
-employment_status,employed_parttime,Employed part-time
-employment_status,homemaker,Homemaker or caring for family
-employment_status,other,Other specify:
-employment_status,retired,Retired
-employment_status,self_employed,Self-employed
-employment_status,student,Student
-employment_status,unable_disability,Unable to work due to disability/illness
-employment_status,unemployed_looking,Unemployed and looking for work
-employment_status,unemployed_not_looking,Unemployed and not looking for work
-git_exp,extensive,Used extensively for collaborative development
+prog_languages,java,Java
+prog_languages,javascript,JavaScript
+prog_languages,cpp,C++
+prog_languages,c,C
+prog_languages,csharp,C#
+prog_languages,dart,Dart (Flutter)
+prog_languages,go,Go (Golang)
+prog_languages,rust,Rust
+prog_languages,swift,Swift
+prog_languages,typescript,TypeScript
+prog_languages,haskell,Haskell
+prog_languages,ruby,Ruby
+prog_languages,bash,Bash
+prog_languages,julia,Julia
+prog_languages,css,CSS
+prog_languages,sql,SQL
+prog_languages,sas,SAS
+prog_languages,matlab,Matlab
+prog_languages,stata,STATA
+prog_languages,spss,SPSS
+prog_languages,nvivo,NVivo
+prog_languages,maxqda,MAXQDA
+prog_languages,none,None of the above
 git_exp,never,Never used Git
 git_exp,occasional,Used occasionally for basic tasks
 git_exp,regular,Used regularly for own projects
-github_exp,collab,Extensively used for collaborative development
-github_exp,managed,Regularly managed own repositories
+git_exp,extensive,Used extensively for collaborative development
 github_exp,never,Never used GitHub
 github_exp,viewed,Occasionally viewed/downloaded repositories
-ide_exp,extensive,"I use IDEs extensively for collaborative development, customizing environments, using advanced features (e.g., remote development, extensions/plugins), and optimizing workflow."
+github_exp,managed,Regularly managed own repositories
+github_exp,collab,Extensively used for collaborative development
+data_storage,paper,Physical notebooks on paper
+data_storage,spreadsheet,"Spreadsheet-based format (Excel, Google Sheets)"
+data_storage,machine_readable,"Machine-readable files (CSV, JSON)"
+data_storage,database,Relational database
+data_storage,dont_know,Don't know
+data_storage,no_data,No data to store
+doc_writing,word_no_code,"Word processors (e.g., MS Word, Google Docs) without code"
+doc_writing,word_copy_paste,"Word processors (e.g., MS Word, Google Docs) with copy/paste code output"
+doc_writing,latex_copy_paste,LaTeX with copy/paste code output
+doc_writing,literate_prog,"Literate programming notebooks (e.g., R Markdown, Quarto, Jupyter)"
+ide_list,rstudio,RStudio
+ide_list,positron,Positron
+ide_list,vscode,Visual Studio Code (VS Code)
+ide_list,pycharm,PyCharm
+ide_list,jupyterlab,JupyterLab
+ide_list,jupyter_notebook,Jupyter Notebook
+ide_list,atom,Atom
+ide_list,sublime,Sublime Text
+ide_list,matlab_ide,MATLAB IDE
+ide_list,emacs,Emacs
+ide_list,vim,Vim
+ide_list,cursor,Cursor
+ide_list,windsurf,Windsurf
+ide_list,zed,Zed
+ide_list,fleet,Fleet (JetBrains)
+ide_list,neovim,Neovim
+ide_list,intellij_idea,IntelliJ IDEA
+ide_list,webstorm,WebStorm
+ide_list,nova,Nova
+ide_list,github_codespaces,GitHub Codespaces
+ide_list,replit,Replit
+ide_list,gitpod,Gitpod
+ide_list,codesandbox,CodeSandbox
+ide_list,android_studio,Android Studio
+ide_list,xcode,Xcode
+ide_list,notepad,Notepad++
+ide_list,doom_emacs,Doom Emacs
+ide_list,helix,Helix
+ide_list,none,None of the above
 ide_exp,never,I have never used an IDE.
 ide_exp,occasional,I have occasionally used an IDE for basic code editing or running scripts.
 ide_exp,regular,"I regularly use an IDE for my own projects, taking advantage of features like code completion, debugging, or version control integration."
-ide_list,android_studio,Android Studio
-ide_list,atom,Atom
-ide_list,codesandbox,CodeSandbox
-ide_list,codespaces,GitHub Codespaces
-ide_list,cursor,Cursor
-ide_list,doom_emacs,Doom Emacs
-ide_list,emacs,Emacs
-ide_list,fleet,Fleet (JetBrains)
-ide_list,gitpod,Gitpod
-ide_list,helix,Helix
-ide_list,intellij,IntelliJ IDEA
-ide_list,jupyter_notebook,Jupyter Notebook
-ide_list,jupyterlab,JupyterLab
-ide_list,matlab_ide,MATLAB IDE
-ide_list,neovim,Neovim
-ide_list,none,None of the above
-ide_list,notepadpp,Notepad++
-ide_list,nova,Nova
-ide_list,positron,Positron
-ide_list,pycharm,PyCharm
-ide_list,replit,Replit
-ide_list,rstudio,RStudio
-ide_list,sublime,Sublime Text
-ide_list,vim,Vim
-ide_list,visual_studio,Visual Studio
-ide_list,vscode,Visual Studio Code (VS Code)
-ide_list,webstorm,WebStorm
-ide_list,windsurf,Windsurf
-ide_list,xcode,Xcode
-ide_list,zed,Zed
-list_accessibility,no,No
-list_accessibility,prefer_not_to_say_accessibility,Prefer not to say
-list_accessibility,yes,Yes
+ide_exp,extensive,"I use IDEs extensively for collaborative development, customizing environments, using advanced features (e.g., remote development, extensions/plugins), and optimizing workflow."
+cli_exp,never,"I have never used the command-line interface (Terminal on Mac, Windows Terminal on Windows)."
+cli_exp,occasional,"I have used the CLI occasionally for basic tasks (e.g. navigating folders, running simple commands)."
+cli_exp,regular,"I use the CLI regularly for my own projects, including scripting and automating tasks."
+cli_exp,extensive,"I use the CLI extensively for advanced workflows, system administration, or integrating with other tools (e.g. SSH, environment management, custom scripts)."
+llm_tools,chatgpt,ChatGPT (OpenAI)
+llm_tools,claude,Claude (Anthropic)
+llm_tools,claude_code,Claude Code (Anthropic)
+llm_tools,gemini,"Gemini (Google, formerly Bard)"
+llm_tools,notebooklm,NotebookLM (Google)
+llm_tools,copilot_ide,Copilot for IDEs
+llm_tools,copilot_365,Copilot for Microsoft 365
+llm_tools,perplexity,Perplexity AI
+llm_tools,llama,Llama (Meta)
+llm_tools,mistral,Mistral AI
+llm_tools,pi,Pi
+llm_tools,deepseek,DeepSeek
+llm_tools,bedrock,Amazon Bedrock
+llm_tools,grok,xAI (Grok)
+llm_tools,replit,Replit AI
+llm_tools,phind,Phind
+llm_tools,tabnine,Tabnine
+llm_tools,codeium,Codeium
+llm_tools,starcoder,Starcoder
+llm_tools,duet,Google Duet AI
+llm_tools,notion,Notion AI
+llm_tools,jasper,Jasper
+llm_tools,cline,Cline
+llm_tools,cursor,Cursor
+llm_tools,magic,Magic AI
+llm_tools,zoom,Zoom AI Companion
+llm_tools,elicit,Elicit
+llm_tools,research_rabbit,Research Rabbit
+llm_tools,semantic_scholar,Semantic Scholar AI
+llm_tools,scisummary,SciSummary
+llm_tools,paperpal,Paperpal
+llm_tools,consensus,Consensus
+llm_tools,scite,Scite Assistant
+llm_tools,scispace,Scispace Literature Review Tools
+llm_tools,none,None of the above
+llm_freq,never,I have not used any LLMs.
+llm_freq,occasional,I use LLMs occasionally when needed (e.g once a week).
+llm_freq,regular,I regularly use LLMs to improve efficiency (e.g. once a day).
+llm_freq,rely,I rely on LLMs for completion (e.g. several times a day).
+yesno,yes,Yes
+yesno,no,No
+mentorship,mentor,"Yes, as a mentor"
+mentorship,mentee,"Yes, as a mentee"
+mentorship,not_interested,"No, I am not interested"
+list_gender,woman,Woman
+list_gender,man,Man
+list_gender,non_binary,Non-binary
+list_gender,self_describe,Prefer to self-describe
+list_gender,prefer_not_to_say_gender,Prefer not to say
+list_age_group,under_18,Under 18
 list_age_group,18_24,18–24
 list_age_group,25_34,25–34
 list_age_group,35_44,35–44
@@ -282,105 +362,24 @@ list_age_group,45_54,45–54
 list_age_group,55_64,55–64
 list_age_group,65_or_older,65 or older
 list_age_group,prefer_not_to_say_age,Prefer not to say
-list_age_group,under_18,Under 18
-list_gender,man,Man
-list_gender,non_binary,Non-binary
-list_gender,prefer_not_to_say_gender,Prefer not to say
-list_gender,self_describe,Prefer to self-describe
-list_gender,woman,Woman
+list_accessibility,yes,Yes
+list_accessibility,no,No
+list_accessibility,prefer_not_to_say_accessibility,Prefer not to say
 list_password_storage,none,I don’t store them anywhere
+list_password_storage,unprotected_digital,"I store them in an unprotected digital file or app (e.g., Word, Excel, email, WhatsApp)"
 list_password_storage,paper,I write them down on paper
 list_password_storage,password_manager,I use a password manager
-list_password_storage,unprotected_digital,"I store them in an unprotected digital file or app (e.g., Word, Excel, email, WhatsApp)"
-list_web_browser,apple_safari,Apple Safari
-list_web_browser,arc,Arc
-list_web_browser,brave,Brave
 list_web_browser,google_chrome,Google Chrome
+list_web_browser,apple_safari,Apple Safari
 list_web_browser,microsoft_edge,Microsoft Edge
 list_web_browser,mozilla_firefox,Mozilla Firefox
-list_web_browser,opera,Opera
-list_web_browser,other,Other
 list_web_browser,samsung_internet,Samsung Internet
+list_web_browser,opera,Opera
+list_web_browser,brave,Brave
 list_web_browser,vivaldi,Vivaldi
-llm_freq,never,I have not used any LLMs.
-llm_freq,occasional,I use LLMs occasionally when needed (e.g once a week).
-llm_freq,regular,I regularly use LLMs to improve efficiency (e.g. once a day).
-llm_freq,rely,I rely on LLMs for completion (e.g. several times a day).
-llm_tools,bedrock,Amazon Bedrock
-llm_tools,chatgpt,ChatGPT (OpenAI)
-llm_tools,claude,Claude (Anthropic)
-llm_tools,claude_code,Claude Code (Anthropic)
-llm_tools,cline,Cline
-llm_tools,codeium,Codeium
-llm_tools,consensus,Consensus
-llm_tools,copilot_365,Copilot for Microsoft 365
-llm_tools,copilot_ide,Copilot for IDEs
-llm_tools,cursor,Cursor AI
-llm_tools,deepseek,DeepSeek
-llm_tools,duet,Google Duet AI
-llm_tools,elicit,Elicit
-llm_tools,gemini,"Gemini (Google, formerly Bard)"
-llm_tools,grok,xAI (Grok)
-llm_tools,jasper,Jasper
-llm_tools,llama,Llama (Meta)
-llm_tools,magic,Magic AI
-llm_tools,mistral,Mistral AI
-llm_tools,none,None of the above
-llm_tools,notebooklm,NotebookLM (Google)
-llm_tools,notion,Notion AI
-llm_tools,paperpal,Paperpal
-llm_tools,perplexity,Perplexity AI
-llm_tools,phind,Phind
-llm_tools,pi,Pi
-llm_tools,replit,Replit AI
-llm_tools,research_rabbit,Research Rabbit
-llm_tools,scispace,Scispace Literature Review Tools
-llm_tools,scisummary,SciSummary
-llm_tools,scite,Scite Assistant
-llm_tools,semantic_scholar,Semantic Scholar AI
-llm_tools,starcoder,Starcoder
-llm_tools,tabnine,Tabnine
-llm_tools,zoom,Zoom AI Companion
-mentorship,mentee,"Yes, as a mentee"
-mentorship,mentor,"Yes, as a mentor"
-mentorship,not_interested,"No, I am not interested"
-organisation_type,academia,Academia
-organisation_type,government,Government
-organisation_type,independent_consultant,Independent consultant
-organisation_type,multilateral,Multi-lateral organisation
-organisation_type,ngo,NGO
-organisation_type,other,Other specify:
-organisation_type,private_sector,Private sector
-prog_languages,bash,Bash
-prog_languages,c,C
-prog_languages,cpp,C++
-prog_languages,csharp,C#
-prog_languages,css,CSS
-prog_languages,dart,Dart (Flutter)
-prog_languages,go,Go (Golang)
-prog_languages,haskell,Haskell
-prog_languages,java,Java
-prog_languages,javascript,JavaScript
-prog_languages,julia,Julia
-prog_languages,matlab,Matlab
-prog_languages,maxqda,MAXQDA
-prog_languages,none,None of the above
-prog_languages,nvivo,NVivo
-prog_languages,ruby,Ruby
-prog_languages,rust,Rust
-prog_languages,sas,SAS
-prog_languages,spss,SPSS
-prog_languages,sql,SQL
-prog_languages,stata,STATA
-prog_languages,swift,Swift
-prog_languages,typescript,TypeScript
-programming_exp,few_lines,I have written a few lines
-programming_exp,maintained,I have written and maintained larger software
-programming_exp,none,I have none
-programming_exp,own_use,I have written programs for own use
+list_web_browser,arc,Arc
+list_web_browser,other,Other
 yes,yes,Yes
-yesno,no,No
-yesno,yes,Yes
-yesnomoreinfo,more_info,I need more information
-yesnomoreinfo,no,No
 yesnomoreinfo,yes,Yes
+yesnomoreinfo,no,No
+yesnomoreinfo,more_info,I need more information

@@ -12,85 +12,64 @@ This document contains the complete content extracted from the
 pre-course survey for data science for openwashdata 002. Each section
 and question is presented exactly as it appears in the original form.
 
+
 Thank you for your interest in this course! Your course instructors are
 looking forward to meeting you. We will meet on Zoom for 10 modules,
 starting on **Thursday, 11th September, from 14:00 to 16:30 CET**.
-
 Details about the content of the course can be found on the course
-website:
-[https://ds4owd-002.github.io/website/](https://ds4owd-002.github.io/website/)
-
-**How do I sign up?**
-
-To sign up for the course, please complete the following four steps:
-
-**Step 1: Get an account on GitHub.**
-
-To set up an account on GitHub, follow these general steps:
-
-1. Go to the GitHub website at
-   [https://github.com/](https://github.com/).
-2. Click on the "Sign up" button on the top right corner of the page.
-3. Enter your preferred username, email address, and password in the
-   provided fields. (Find advice on choosing a good GitHub username
-   here:
-   [https://happygitwithr.com/github-acct](https://happygitwithr.com/github-acct))
-4. Choose whether you want to receive updates and announcements via
-   email.
-5. Complete the verification process by solving a puzzle and entering a
-   verification code sent to your email.
-
-**Step 2: Register for an ORCID iD**
-
-Create your ORCID iD at:
-[https://orcid.org/register](https://orcid.org/register)
-
-**Step 3: Identify a dataset you want to work with for the capstone
-project**
-
+website: [https://ds4owd-002.github.io/website/](https://ds4owd-
+002.github.io/website/)  **How do I sign up?**  To sign up for the
+course, please complete the following four steps:  **Step 1: Get an
+account on GitHub.**  To set up an account on GitHub, follow these
+general steps:  1. Go to the GitHub website at
+[https://github.com/](https://github.com/). 2. Click on the “Sign up”
+button on the top right corner of the page. 3. Enter your preferred
+username, email address, and password in the provided fields. (Find
+advice on choosing a good GitHub username here:
+[https://happygitwithr.com/github-
+acct](https://happygitwithr.com/github-acct)) 4. Choose whether you want
+to receive updates and announcements via email. 5. Complete the
+verification process by solving a puzzle and entering a verification
+code sent to your email.  **Step 2: Register for an ORCID iD**  Create
+your ORCID iD at:
+[https://orcid.org/register](https://orcid.org/register)  **Step 3:
+Identify a dataset you want to work with for the capstone project**
 This course follows the principle of "open by default". All educational
 resources are published openly using permissive licenses for reuse. We
-also apply this principle to the code and data used in the course.
-
-At the end of the course, you will complete a capstone project, which
+also apply this principle to the code and data used in the course.  At
+the end of the course, you will complete a capstone project, which
 involves analyzing a dataset of your choice. We encourage you to use
 data available from your company, government institution, research
 institute, or other personal sources. However, this requires the data to
 be shared openly, which may not always be possible if it is sensitive or
 contains personal information. In such cases, you may use a dataset that
-has already been published openly.
-
-The pre-course survey will help us identify who has their own dataset
-and who does not. We will begin working with data starting from Module
-5.
-
-You can find examples of completed reports from the first iteration of
-this course here:
-[https://openwashdata.org/pages/academy/graduates/](https://openwashdata.org/pages/academy/graduates/)
-
-**Step 4: Complete this pre-course survey**
-
-By completing this pre-course survey, you will be registered for the
+has already been published openly.  The pre-course survey will help us
+identify who has their own dataset and who does not. We will begin
+working with data starting from Module 5.  You can find examples of
+completed reports from the first iteration of this course here: [https:/
+/openwashdata.org/pages/academy/graduates/](https://openwashdata.org/pag
+es/academy/graduates/)  **Step 4: Complete this pre-course survey**  By
+completing this pre-course survey, you will be registered for the
 course. We will add you to an email list to keep you informed about the
 next steps.
 
 # Personal Information
 
-## GitHub Username
+## Please provide your GitHub username
 
 **Question Type:** Short Text  
 **Required:** Yes  
 **Text:** Please provide your GitHub username *
 
-## ORCID iD
+## Please provide your ORCID iD (e.g. 0000-0003-2196-5015)
 
-**Question Type:** Short Text  
+**Question Type:** Short Text (with validation)  
 **Required:** Yes  
 **Text:** Please provide your ORCID iD (e.g. 0000-0003-2196-5015) *
 
 ## Your email address
 
-**Question Type:** Short Text  
+**Question Type:** Short Text (with validation)  
 **Required:** Yes  
 **Text:** Your email address *
 
@@ -106,91 +85,288 @@ next steps.
 **Required:** Yes  
 **Text:** Surname *
 
-## Gender Identity
+## What is your gender?
 
 **Question Type:** Multiple Choice  
 **Required:** No  
-**Text:** How do you currently describe your gender identity?  
+**Text:** What is your gender?
+**Hint:** This question is optional.
 **Options:**
 
-- Male
-- Female
+- Woman
+- Man
 - Non-binary
-- Other
-- Prefer not to answer
+- Prefer to self-describe
+- Prefer not to say
 
-## Gender Self-Description
+## Prefer to self-describe:
 
 **Question Type:** Short Text  
 **Required:** No  
-**Text:** Prefer to self-describe:
+**Text:** Prefer to self-describe: 
 
-## Age
+## What is your age group?
 
 **Question Type:** Multiple Choice  
 **Required:** No  
-**Text:** Age  
+**Text:** What is your age group?
+**Hint:** This question is optional.
 **Options:**
 
-- 18-24
-- 25-34
-- 35-44
-- 45-54
-- 55-64
+- Under 18
+- 18–24
+- 25–34
+- 35–44
+- 45–54
+- 55–64
 - 65 or older
-- Prefer not to answer
+- Prefer not to say
 
-## Country of Residence
-
-**Question Type:** Dropdown  
-**Required:** No  
-**Text:** Country of Residence  
-**Options:** Full list of countries with ISO3c codes
-
-## Accessibility Requirements
+## Accessibility Needs
 
 **Question Type:** Multiple Choice  
 **Required:** No  
-**Text:** Do you have any accessibility requirements that we should be
-aware of to support your participation in this course?  
+**Text:** Do you have any accessibility needs we should be aware of?
+**Hint:** This question is optional.
 **Options:**
 
 - Yes
 - No
+- Prefer not to say
 
-## Accessibility Specification
+## Yes (please specify):
 
 **Question Type:** Short Text  
 **Required:** No  
-**Text:** Yes (please specify):
+**Text:** Yes (please specify): 
 
-# Education and Employment
+## Country of Residence
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Country of Residence
+**Options:**
+
+- Afghanistan
+- Albania
+- Algeria
+- Andorra
+- Angola
+- Antigua and Barbuda
+- Argentina
+- Armenia
+- Australia
+- Austria
+- Azerbaijan
+- Bahamas
+- Bahrain
+- Bangladesh
+- Barbados
+- Belarus
+- Belgium
+- Belize
+- Benin
+- Bhutan
+- Bolivia
+- Bosnia and Herzegovina
+- Botswana
+- Brazil
+- Brunei Darussalam
+- Bulgaria
+- Burkina Faso
+- Burundi
+- Cabo Verde
+- Cambodia
+- Cameroon
+- Canada
+- Central African Republic
+- Chad
+- Chile
+- China
+- Colombia
+- Comoros
+- Congo
+- Congo Democratic Republic
+- Costa Rica
+- Côte d'Ivoire
+- Croatia
+- Cuba
+- Cyprus
+- Czechia
+- Denmark
+- Djibouti
+- Dominica
+- Dominican Republic
+- Ecuador
+- Egypt
+- El Salvador
+- Equatorial Guinea
+- Eritrea
+- Estonia
+- Eswatini
+- Ethiopia
+- Fiji
+- Finland
+- France
+- Gabon
+- Gambia
+- Georgia
+- Germany
+- Ghana
+- Greece
+- Grenada
+- Guatemala
+- Guinea
+- Guinea-Bissau
+- Guyana
+- Haiti
+- Honduras
+- Hungary
+- Iceland
+- India
+- Indonesia
+- Iran
+- Iraq
+- Ireland
+- Israel
+- Italy
+- Jamaica
+- Japan
+- Jordan
+- Kazakhstan
+- Kenya
+- Kiribati
+- Korea Democratic People's Republic
+- Korea Republic of
+- Kuwait
+- Kyrgyzstan
+- Lao People's Democratic Republic
+- Latvia
+- Lebanon
+- Lesotho
+- Liberia
+- Libya
+- Liechtenstein
+- Lithuania
+- Luxembourg
+- Madagascar
+- Malawi
+- Malaysia
+- Maldives
+- Mali
+- Malta
+- Marshall Islands
+- Mauritania
+- Mauritius
+- Mexico
+- Micronesia
+- Moldova
+- Monaco
+- Mongolia
+- Montenegro
+- Morocco
+- Mozambique
+- Myanmar
+- Namibia
+- Nauru
+- Nepal
+- Netherlands
+- New Zealand
+- Nicaragua
+- Niger
+- Nigeria
+- North Macedonia
+- Norway
+- Oman
+- Pakistan
+- Palau
+- Palestine
+- Panama
+- Papua New Guinea
+- Paraguay
+- Peru
+- Philippines
+- Poland
+- Portugal
+- Qatar
+- Romania
+- Russian Federation
+- Rwanda
+- Saint Kitts and Nevis
+- Saint Lucia
+- Saint Vincent and the Grenadines
+- Samoa
+- San Marino
+- Sao Tome and Principe
+- Saudi Arabia
+- Senegal
+- Serbia
+- Seychelles
+- Sierra Leone
+- Singapore
+- Slovakia
+- Slovenia
+- Solomon Islands
+- Somalia
+- South Africa
+- South Sudan
+- Spain
+- Sri Lanka
+- Sudan
+- Suriname
+- Sweden
+- Switzerland
+- Syrian Arab Republic
+- Taiwan
+- Tajikistan
+- Tanzania
+- Thailand
+- Timor-Leste
+- Togo
+- Tonga
+- Trinidad and Tobago
+- Tunisia
+- Turkey
+- Turkmenistan
+- Tuvalu
+- Uganda
+- Ukraine
+- United Arab Emirates
+- United Kingdom
+- United States
+- Uruguay
+- Uzbekistan
+- Vanuatu
+- Vatican City
+- Venezuela
+- Viet Nam
+- Yemen
+- Zambia
+- Zimbabwe
+
+## Education and Employment
 
 ## Education Level
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Education Level  
+**Required:** Yes  
+**Text:** Education Level
 **Options:**
 
 - No formal education (Never attended school)
 - Primary education (e.g. Elementary school, grades 1–5/6)
-- Lower secondary education (e.g. Middle school, junior high, grades
-  6–8/9)
-- Upper secondary education (e.g. High school diploma, A-levels, GED,
-  vocational certificate, trade school diploma)
-- Postsecondary non-tertiary education (e.g. Community college
-  certificate, diploma, foundation year)
+- Lower secondary education (e.g. Middle school, junior high, grades 6–8/9)
+- Upper secondary education (e.g. High school diploma, A-levels, GED, vocational certificate, trade school diploma)
+- Postsecondary non-tertiary education (e.g. Community college certificate, diploma, foundation year)
 - Bachelor's degree (e.g. BA, BSc, BEng, Bachelor's degree)
 - Master's degree (e.g. MA, MSc, MEng, MBA, Master's degree)
-- Doctorate or higher (e.g. PhD, EdD, MD, JD, DPhil, professional
-  doctorate)
+- Doctorate or higher (e.g. PhD, EdD, MD, JD, DPhil, professional doctorate)
 
-## Employment Situation
+## What is your current employment situation?
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** What is your current employment situation?  
+**Required:** Yes  
+**Text:** What is your current employment situation?
 **Options:**
 
 - Employed full-time
@@ -202,21 +378,19 @@ aware of to support your participation in this course?
 - Student
 - Homemaker or caring for family
 - Unable to work due to disability/illness
-- Other, specify:
+- Other
 
-## Organisation Name
+## If employed or self-employed what is the name of the organisation / institution?
 
 **Question Type:** Short Text  
-**Required:** No  
-**Text:** If employed or self-employed what is the name of the
-organisation / instituiton?
+**Required:** Yes  
+**Text:** If employed or self-employed what is the name of the organisation / institution? *
 
-## Organisation Type
+## Org Type
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** If employed or self-employed, what best describes the
-organisation you work for?  
+**Required:** Yes  
+**Text:** If employed or self-employed what best describes the organisation you work for?
 **Options:**
 
 - Academia
@@ -225,43 +399,86 @@ organisation you work for?
 - Private sector
 - Independent consultant
 - Multi-lateral organisation
-- Other, specify:
+- Other
 
-# Barriers to Participation
+## Barriers to Participation
 
 Which of the following barriers apply to your complete participation in
 this course?
 
-## Participation Barriers
+## Time availability
 
-**Question Type:** Grid/Matrix  
-**Required:** No  
-**Text:** Rate each potential barrier
-
-**Rating Scale:**
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Time availability
+**Options:**
 
 - Not a barrier
 - A barrier
-- I don't know
+- Don't know
 
-**Barriers to rate:**
-
-- Time availability
-- My supervisors interests
-- Access to stable internet
-- Access to electricity
-- Access to computer/laptop
-- Access to second external screen
-
-# Technical Experience
-
-## Programming Experience
-
-### General Programming
+## My supervisors interests
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Experience with programming in general  
+**Required:** Yes  
+**Text:** My supervisors interests
+**Options:**
+
+- Not a barrier
+- A barrier
+- Don't know
+
+## Access to stable internet
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Access to stable internet
+**Options:**
+
+- Not a barrier
+- A barrier
+- Don't know
+
+## Access to electricity
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Access to electricity
+**Options:**
+
+- Not a barrier
+- A barrier
+- Don't know
+
+## Access to computer/laptop
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Access to computer/laptop
+**Options:**
+
+- Not a barrier
+- A barrier
+- Don't know
+
+## Access to second external screen
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Access to second external screen
+**Options:**
+
+- Not a barrier
+- A barrier
+- Don't know
+
+## Technical Experience
+
+## Experience with programming in general
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Experience with programming in general
 **Options:**
 
 - I have none
@@ -269,11 +486,11 @@ this course?
 - I have written programs for own use
 - I have written and maintained larger software
 
-### R Programming
+## Experience with programming in R
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Experience with programming in R  
+**Required:** Yes  
+**Text:** Experience with programming in R
 **Options:**
 
 - I have none
@@ -281,11 +498,11 @@ this course?
 - I have written programs for own use
 - I have written and maintained larger software
 
-### Python Programming
+## Experience with programming in Python
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Experience with programming in Python  
+**Required:** Yes  
+**Text:** Experience with programming in Python
 **Options:**
 
 - I have none
@@ -293,12 +510,11 @@ this course?
 - I have written programs for own use
 - I have written and maintained larger software
 
-## Other Programming Languages
+## Other Languages
 
 **Question Type:** Multiple Select (Checkboxes)  
-**Required:** No  
-**Text:** Which other programming languages / software do you have
-experience in?  
+**Required:** Yes  
+**Text:** Which other programming languages / software do you have experience in?
 **Options:**
 
 - Java
@@ -328,8 +544,8 @@ experience in?
 ## Git Experience
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Which of these best describes your experience with using Git?  
+**Required:** Yes  
+**Text:** Which of these best describes your experience with using Git?
 **Options:**
 
 - Never used Git
@@ -337,12 +553,11 @@ experience in?
 - Used regularly for own projects
 - Used extensively for collaborative development
 
-## GitHub Experience
+## Github Experience
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Which of these best describes your experience with using
-GitHub?  
+**Required:** Yes  
+**Text:** Which of these best describes your experience with using GitHub?
 **Options:**
 
 - Never used GitHub
@@ -350,11 +565,11 @@ GitHub?
 - Regularly managed own repositories
 - Extensively used for collaborative development
 
-## Data Storage Formats
+## Data Format
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** In which format do you store the majority of your data?  
+**Required:** Yes  
+**Text:** In which format do you store the majority of your data?
 **Options:**
 
 - Physical notebooks on paper
@@ -364,26 +579,23 @@ GitHub?
 - Don't know
 - No data to store
 
-## Narrative Document Writing
+## Narrative Docs
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Which of these best describes how you write narrative
-documents that include text and analysis?  
+**Required:** Yes  
+**Text:** Which of these best describes how you write narrative documents that include text and analysis?
 **Options:**
 
 - Word processors (e.g., MS Word, Google Docs) without code
-- Word processors (e.g., MS Word, Google Docs) with copy/paste code
-  output
+- Word processors (e.g., MS Word, Google Docs) with copy/paste code output
 - LaTeX with copy/paste code output
 - Literate programming notebooks (e.g., R Markdown, Quarto, Jupyter)
 
-## IDE Usage
+## Ide Used
 
 **Question Type:** Multiple Select (Checkboxes)  
-**Required:** No  
-**Text:** Which of the following Integrated Development Environments
-(IDEs) have you used?  
+**Required:** Yes  
+**Text:** Which of the following Integrated Development Environments (IDEs) have you used?
 **Options:**
 
 - RStudio
@@ -404,7 +616,6 @@ documents that include text and analysis?
 - Neovim
 - IntelliJ IDEA
 - WebStorm
-- Visual Studio
 - Nova
 - GitHub Codespaces
 - Replit
@@ -417,53 +628,35 @@ documents that include text and analysis?
 - Helix
 - None of the above
 
-## IDE Experience Level
+## Ide Experience
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Which of these best describes your experience with using IDEs?  
+**Required:** Yes  
+**Text:** Which of these best describes your experience with using IDEs?
 **Options:**
 
 - I have never used an IDE.
-- I have occasionally used an IDE for basic code editing or running
-  scripts.
-- I regularly use an IDE for my own projects, taking advantage of
-  features like code completion, debugging, or version control
-  integration.
-- I use IDEs extensively for collaborative development, customizing
-  environments, using advanced features (e.g., remote development,
-  extensions/plugins), and optimizing workflow.
+- I have occasionally used an IDE for basic code editing or running scripts.
+- I regularly use an IDE for my own projects, taking advantage of features like code completion, debugging, or version control integration.
+- I use IDEs extensively for collaborative development, customizing environments, using advanced features (e.g., remote development, extensions/plugins), and optimizing workflow.
 
-## Command-Line Interface Usage
+## Cli Usage
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Which of these best describes your current usage of the
-default command-line interface (CLI)?
-
-On Mac: The default CLI app is Terminal, and the default shell is Zsh
-(you may also use Bash or other shells)
-
-On Windows: The default CLI app is Windows Terminal, which can run
-Command Prompt, PowerShell, and Bash (via Windows Subsystem for Linux)
-How would you describe your experience?  
+**Required:** Yes  
+**Text:** Which of these best describes your current usage of the default command-line interface (CLI)? On Mac: The default CLI app is Terminal and the default shell is Zsh (you may also use Bash or other shells). On Windows: The default CLI app is Windows Terminal which can run Command Prompt PowerShell and Bash (via Windows Subsystem for Linux). How would you describe your experience?
 **Options:**
 
-- I have never used the CLI (Terminal on Mac, Windows Terminal on
-  Windows).
-- I have used the CLI occasionally for basic tasks (e.g., navigating
-  folders, running simple commands).
-- I use the CLI regularly for my own projects, including scripting and
-  automating tasks.
-- I use the CLI extensively for advanced workflows, system
-  administration, or integrating with other tools (e.g., SSH,
-  environment management, custom scripts).
+- I have never used the command-line interface (Terminal on Mac, Windows Terminal on Windows).
+- I have used the CLI occasionally for basic tasks (e.g. navigating folders, running simple commands).
+- I use the CLI regularly for my own projects, including scripting and automating tasks.
+- I use the CLI extensively for advanced workflows, system administration, or integrating with other tools (e.g. SSH, environment management, custom scripts).
 
-## Large Language Model Tools
+## Llm Platforms
 
 **Question Type:** Multiple Select (Checkboxes)  
-**Required:** No  
-**Text:** Which Large Language Model tools/platforms have you used?  
+**Required:** Yes  
+**Text:** Which Large Language Model tools/platforms have you used?
 **Options:**
 
 - ChatGPT (OpenAI)
@@ -489,7 +682,7 @@ How would you describe your experience?
 - Notion AI
 - Jasper
 - Cline
-- Cursor AI
+- Cursor
 - Magic AI
 - Zoom AI Companion
 - Elicit
@@ -500,149 +693,228 @@ How would you describe your experience?
 - Consensus
 - Scite Assistant
 - Scispace Literature Review Tools
+- None of the above
 
-## LLM Usage for Tasks
+## How frequently do you use Large Language Models for the following tasks?
 
-How frequently do you use Large Language Models for the following tasks?
+## Llm Summarization
 
-**Question Type:** Grid/Matrix  
-**Required:** No
-
-**Rating Scale:**
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** For Summarization (e.g., "Summarize this research paper in 200 words.")
+**Options:**
 
 - I have not used any LLMs.
 - I use LLMs occasionally when needed (e.g once a week).
 - I regularly use LLMs to improve efficiency (e.g. once a day).
 - I rely on LLMs for completion (e.g. several times a day).
 
-**Tasks to rate:**
-
-- For Summarization (e.g., "Summarize this research paper in 200
-  words.")
-- Translation (e.g., "Translate this email from English to German.")
-- Question Answering (e.g., "What are the symptoms of vitamin D
-  deficiency?")
-- Conversational Assistance / Chatbots (e.g., "Help me with my online
-  order"))
-- Data Analysis / Extraction (e.g., "Extract all dates and names from
-  this contract.")
-- Content Generation (e.g. images, videos)
-- Learning/Teaching/Tutoring (e.g., "Explain the Pythagorean theorem.")
-- Agentic Task Automation (i.e. LLM acts autonomously or
-  semi-autonomously to perform tasks)
-
-## Web Browser Preference
+## Llm Translation
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Which web browser do you primarily use?  
+**Required:** Yes  
+**Text:** Translation (e.g., "Translate this email from English to German.")
+**Options:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
+## Llm Qa
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Question Answering (e.g., "What are the symptoms of vitamin D deficiency?")
+**Options:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
+## Llm Conversation
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Conversational Assistance / Chatbots (e.g., "Help me with my online order")
+**Options:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
+## Llm Data Analysis
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Data Analysis / Extraction (e.g., "Extract all dates and names from this contract.")
+**Options:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
+## Content Generation (e.g. images, videos)
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Content Generation (e.g. images, videos)
+**Options:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
+## Llm Learning
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Learning/Teaching/Tutoring (e.g., "Explain the Pythagorean theorem.")
+**Options:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
+## Llm Automation
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Agentic Task Automation (i.e. LLM acts autonomously or semi-autonomously to perform tasks)
+**Options:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
+## Password Storage
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** How do you usually store your passwords or credentials?
+**Hint:** Select the option that best describes your usual practice.
+**Options:**
+
+- I don’t store them anywhere
+- I store them in an unprotected digital file or app (e.g., Word, Excel, email, WhatsApp)
+- I write them down on paper
+- I use a password manager
+
+## Which web browser do you use most often?
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Which web browser do you use most often?
 **Options:**
 
 - Google Chrome
-- Mozilla Firefox
-- Safari
+- Apple Safari
 - Microsoft Edge
+- Mozilla Firefox
+- Samsung Internet
 - Opera
 - Brave
 - Vivaldi
 - Arc
 - Other
 
-## Web Browser Other
+## Other (please specify):
 
 **Question Type:** Short Text  
-**Required:** No  
-**Text:** Other (please specify):
+**Required:** Yes  
+**Text:** Other (please specify): *
 
-## Password Manager Usage
+## Do you use browser bookmarks?
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Do you use a password manager?  
+**Required:** Yes  
+**Text:** Do you use browser bookmarks?
 **Options:**
 
 - Yes
 - No
-- I don't know what that is
 
-## Note-Taking Applications
+## Do you use a note-taking tool?
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Do you use digital tools to take and organize notes?  
+**Required:** Yes  
+**Text:** Do you use a note-taking tool?
 **Options:**
 
-- No, I do not use any digital tools for note-taking
-- Yes, I use a tool
+- Yes
+- No
 
-## Note-Taking Tool Specification
+## Which tool do you use?
 
 **Question Type:** Short Text  
-**Required:** No  
-**Text:** Which tool to you use?
+**Required:** Yes  
+**Text:** Which tool do you use? *
 
-# Project and Course Participation
+## Project and Course Participation
 
-## Learning Goals
+## What do you want to know or be able to do that you don't know or can't do right now?
 
-**Question Type:** Long Text  
-**Required:** No  
-**Text:** What do you want to know or be able to do that you don't know
-or can't do right now?
+**Question Type:** Short Text  
+**Required:** Yes  
+**Text:** What do you want to know or be able to do that you don't know or can't do right now? *
 
 ## Data Availability
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** Can you identify a dataset of your own or your organisation
-that you can use for the capstone project report and share publicly as
-open data (see details in survey description Step 3)?  
+**Required:** Yes  
+**Text:** Can you identify a dataset of your own or your organisation that you can use for the capstone project report and share publicly as open data (see details in survey description Step 3)?
 **Options:**
 
 - Yes
 - No
 
-## Mentorship Programme
+## Mentorship Interest
 
 **Question Type:** Multiple Choice  
-**Required:** No  
-**Text:** We are launching a mentorship programme that brings together
-participants with different levels of experience, so they can support
-and learn from each other in small groups. Are you interested in joining
-this mentorship programme?  
+**Required:** Yes  
+**Text:** We are launching a mentorship programme that brings together participants with different levels of experience, so they can support and learn from each other in small groups. Are you interested in joining this mentorship programme?
 **Options:**
 
 - Yes, as a mentor
 - Yes, as a mentee
 - No, I am not interested
 
-# Agreements and Consent
+## Coauthorship
 
-Note that you must acknowledge the Code of Conduct and provide consent
-to be able to submit the form.
-
-## Code of Conduct
-
-**Question Type:** Checkbox/Agreement  
+**Question Type:** Multiple Choice  
 **Required:** Yes  
-**Text:** I acknowledge that I have read and understood the code of
-conduct for this course, and I commit to complying with its guidelines
-and principles to ensure a respectful and ethical learning environment
-for all participants. Available at:
-https://ds4owd-002.github.io/website/code_of_conduct.html
+**Text:** I agree to be listed as a co-author of the open dataset generated from this course. I understand that my authorship will be linked to my ORCID iD to acknowledge my contribution.
+**Options:**
 
-## Data Privacy Statement
+- Yes
+- No
+- I need more information
 
-**Question Type:** Checkbox/Agreement  
+## Agreements and Consent
+
+## Code Conduct
+
+**Question Type:** Multiple Choice  
 **Required:** Yes  
-**Text:** I agree that by submitting this form, I consent to my data
-being used for course administration and management, accessed only by
-instructors, securely stored, not shared with third parties, anonymized
-for reporting, and potentially used for future research to improve the
-course. For reporting purposes, your personal identifiers (ORCID iD,
-GitHub username) will be removed from the data. The anonymized data may
-be used for future research, scientific publications, and analysis to
-improve the course.
+**Text:** I acknowledge that I have read and understood the code of conduct for this course, and I commit to complying with its guidelines and principles to ensure a respectful and ethical learning environment for all participants. Available at: [https://ds4owd-002.github.io/website/code_of_conduct.html](https://ds4owd-002.github.io/website/code_of_conduct.html)
+**Options:**
+
+- Yes
+
+## Data Privacy
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** I agree that by submitting this form, I consent to my data being used for course administration and management, accessed only by instructors, securely stored, not shared with third parties, anonymized for reporting, and potentially used for future research to improve the course. For reporting purposes, your personal identifiers (ORCID iD, GitHub username) will be removed from the data. The anonymized data may be used for future research, scientific publications, and analysis to improve the course.
+**Options:**
+
+- Yes
 
 # Form Submission
 
