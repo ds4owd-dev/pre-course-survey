@@ -781,6 +781,18 @@ this course?
 - I regularly use LLMs to improve efficiency (e.g. once a day).
 - I rely on LLMs for completion (e.g. several times a day).
 
+## Llm Coding
+
+**Question Type:** Multiple Choice  
+**Required:** Yes  
+**Text:** Code assistance that is non-agentic (i.e. LLM provides a response that is copied into a script manually)
+**Options:**
+
+- I have not used any LLMs.
+- I use LLMs occasionally when needed (e.g once a week).
+- I regularly use LLMs to improve efficiency (e.g. once a day).
+- I rely on LLMs for completion (e.g. several times a day).
+
 ## Llm Automation
 
 **Question Type:** Multiple Choice  
@@ -878,7 +890,7 @@ this course?
 
 **Question Type:** Multiple Choice  
 **Required:** Yes  
-**Text:** We are launching a mentorship programme that brings together participants with different levels of experience, so they can support and learn from each other in small groups. Are you interested in joining this mentorship programme?
+**Text:** We are launching a mentorship programme that brings together participants with different levels of experience, so they can support and learn from each other in small groups. We will match mentors and mentees after module 2 and the programme will run through the duration of the course. Are you interested in joining this mentorship programme?
 **Options:**
 
 - Yes, as a mentor

@@ -261,7 +261,7 @@ github_exp,collab,Extensively used for collaborative development
 data_storage,paper,Physical notebooks on paper
 data_storage,spreadsheet,"Spreadsheet-based format (Excel, Google Sheets)"
 data_storage,machine_readable,"Machine-readable files (CSV, JSON)"
-data_storage,database,Relational database
+data_storage,database,Relational / non-relational database
 data_storage,dont_know,Don't know
 data_storage,no_data,No data to store
 doc_writing,word_no_code,"Word processors (e.g., MS Word, Google Docs) without code"
