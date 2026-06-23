@@ -1,206 +1,65 @@
-# Google Form to KoboToolbox XLSForm Conversion
+# Pre-course survey: Data Science for openwashdata
 
-This project documents the complete process of extracting content from a
-Google Form and converting it into a fully functional XLSForm for
-KoboToolbox deployment.
+A KoboToolbox [XLSForm](https://xlsform.org/) for the pre-course survey of the
+Data Science for openwashdata (DS4OWD) course. It is published as a reusable
+open educational resource so that it can be adapted for other courses.
 
-## Project Overview
+## What the survey collects
 
-**Original Source:** Google Forms pre-course survey for Data Science for
-OpenWashData (DS4OWD) course iteration 002  
-**Target Output:** KoboToolbox-compatible XLSForm with complete content
-preservation
+The form gathers participant background before the course starts:
 
-## Process Summary
+- Personal information (name, email, country, GitHub username, ORCID)
+- Education and employment
+- Barriers to participation
+- Technical experience (programming languages, Git, IDEs, LLM tools)
+- Learning goals and interest in mentorship
+- Consent and acknowledgments
 
-### Phase 1: Initial Content Extraction
-- Extracted basic survey structure from Google Form
-- Created initial Quarto document for review
-- Generated baseline CSV files for KoboToolbox
-- Created project documentation (CLAUDE.md)
+## Repository contents
 
-### Phase 2: Content Verification and Enhancement
-- **Critical Discovery:** Initial extraction missed significant content
-- Added complete technical skills questions (programming languages, Git,
-  IDEs, LLMs)
-- Expanded choice lists from 23 to 34 LLM tools
-- Added detailed programming experience questions
-- Enhanced IDE options from 5 to 12 environments
-
-### Phase 3: XLSForm Generation and Debugging
-- Created Python script to generate Excel files from CSV
-- **Major Challenge:** CSV formatting issues with commas in text fields
-- Fixed column count mismatches (21 header vs 22 data columns)
-- Resolved group syntax issues (begin_group → "begin group")
-- Changed acknowledge question type to select_one with yes_only choices
-
-### Phase 4: Complete Content Integration
-- Added full Google Form description (course details, signup steps)
-- Integrated all response examples from detailed .qmd analysis
-- Enhanced education level choices with specific examples
-- Added platform-specific CLI descriptions
-- Included detailed LLM task examples with real use cases
-
-### Phase 5: KoboToolbox Compatibility Fixes
-- Resolved multiline text formatting issues
-- Fixed XPath expression errors in instance naming
-- Eliminated deployment validation errors
-- Final compatibility testing and verification
-
-## Key Challenges and Solutions
-
-### 1. Content Completeness Verification
-**Challenge:** Initial extraction missed substantial content including
-detailed examples and technical question categories.
-
-**Solution:** Implemented iterative verification process comparing Google
-Form content with generated files. Created intermediate .qmd file to
-capture all content for systematic review.
-
-### 2. CSV Format Compatibility
-**Challenge:** Text fields containing commas, quotes, and special
-characters broke CSV parsing.
-
-**Solution:** Implemented proper CSV quoting standards, escaped special
-characters, and added column count validation to prevent structure
-mismatches.
-
-### 3. XLSForm Syntax Requirements
-**Challenge:** KoboToolbox has strict requirements for group syntax,
-question types, and XPath expressions.
-
-**Solution:** 
-- Changed `begin_group`/`end_group` to `begin group`/`end group`
-- Replaced unsupported `acknowledge` type with `select_one yes_only`
-- Simplified instance naming to avoid XPath validation errors
-
-### 4. Multiline Content Handling
-**Challenge:** Questions with multiline descriptions (e.g., CLI usage)
-caused parsing errors in KoboToolbox.
-
-**Solution:** Converted multiline content to single-line format while
-preserving all information about platform-specific differences.
-
-## File Organization
-
-### Project Structure
 ```
 pre-course-survey/
-├── README.md                    # This file - complete documentation
-├── CLAUDE.md                    # Development guidelines and lessons learned
-├── pre-course-survey.Rproj      # R project configuration
-├── forms/                       # Final survey forms and review documents
-│   ├── ds4owd_precourse_survey.xlsx   # **Final XLSForm for KoboToolbox**
-│   └── survey-content.qmd             # Human-readable content for review
-├── data/                        # Source data and configuration files
-│   ├── survey-questions.csv           # Survey structure and questions
-│   ├── survey-choices.csv             # All choice lists with examples
-│   ├── survey-settings.csv            # Form metadata and description
-│   └── countries-iso3c.csv            # Complete country reference
-└── scripts/                     # Development and build tools
-    └── create_xlsform.py              # Python script to generate XLSForm
+├── forms/
+│   └── ds4owd-precourse-survey.xlsx   # The XLSForm (survey, choices, settings)
+├── CITATION.cff                        # Citation metadata
+└── README.md                           # This file
 ```
 
-### File Categories
+The `.xlsx` file is a standard XLSForm with three sheets:
 
-#### **Forms** (`forms/`)
-- **Production Files:** Ready-to-deploy survey forms
-- **Review Documents:** Human-readable content for collaboration
+- `survey` — questions, types, labels, and grouping
+- `choices` — choice lists (countries, programming languages, IDEs, LLM tools, education levels)
+- `settings` — form title, ID, and metadata
 
-#### **Data** (`data/`)
-- **Source Files:** CSV components for XLSForm generation
-- **Reference Data:** Supporting data like country codes
+## How to use it
 
-#### **Scripts** (`scripts/`)
-- **Build Tools:** Automation scripts for form generation
-- **Utilities:** Development and validation helpers
+### Deploy on KoboToolbox
 
-## Survey Content Statistics
+1. Sign in to [KoboToolbox](https://www.kobotoolbox.org/).
+2. Create a new project and choose to import an XLSForm.
+3. Upload `forms/ds4owd-precourse-survey.xlsx`.
+4. Review and deploy the form.
 
-### Question Categories
-- **Personal Information:** 6 questions (GitHub, ORCID, email, name,
-  country)
-- **Education & Employment:** 4 questions with detailed examples
-- **Barriers to Participation:** 6 barrier assessment questions
-- **Technical Experience:** 15 questions covering programming, tools,
-  and platforms
-- **Project Participation:** 3 questions about goals and mentorship
-- **Agreements:** 2 consent/acknowledgment questions
+### Adapt for your own course
 
-### Choice Lists
-- **Countries:** 196 countries with ISO3c codes
-- **Programming Languages:** 23 languages and tools
-- **LLM Platforms:** 34 AI tools and platforms
-- **IDE Options:** 12 development environments
-- **Education Levels:** 8 levels with detailed examples
+1. Open `forms/ds4owd-precourse-survey.xlsx` in a spreadsheet editor.
+2. Edit the `survey`, `choices`, and `settings` sheets to fit your needs.
+3. Update the form title and ID on the `settings` sheet.
+4. Re-upload to KoboToolbox.
 
-### Content Preservation
-- **Complete Description:** Full course information, meeting schedule,
-  signup instructions
-- **Detailed Examples:** Every choice includes relevant examples (e.g.,
-  "Bachelor's degree (e.g. BA, BSc, BEng)")
-- **Platform Specifics:** OS-specific instructions for CLI usage
-- **Use Case Examples:** Real examples for each LLM task category
+For the XLSForm syntax reference, see [xlsform.org](https://xlsform.org/).
 
-## Deployment Instructions
+## License
 
-### For KoboToolbox
-1. Go to [KoboToolbox](https://www.kobotoolbox.org/)
-2. Create new project
-3. Upload `forms/ds4owd_precourse_survey.xlsx`
-4. Deploy form
+The survey is released under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+You are free to reuse and adapt it with attribution.
 
-### For Local Development
-```bash
-# Regenerate XLSForm from CSV files
-python3 scripts/create_xlsform.py
+## Citation
 
-# Render survey content for review
-quarto render forms/survey-content.qmd
-```
+If you reuse this survey, please cite it. See [`CITATION.cff`](CITATION.cff)
+for full metadata.
 
-## Lessons Learned
+## Course context
 
-### Content Extraction Best Practices
-1. **Always verify completeness** - Initial extraction often misses
-   nuanced content
-2. **Use intermediate formats** - .qmd files help verify content
-   preservation
-3. **Cross-reference systematically** - Compare original with generated
-   files section by section
-
-### XLSForm Development Guidelines
-1. **Test early and often** - KoboToolbox validation catches issues not
-   visible in Excel
-2. **Handle special characters carefully** - Proper CSV quoting is
-   essential
-3. **Keep XPath expressions simple** - Complex expressions often fail
-   validation
-4. **Use supported question types** - Stick to documented KoboToolbox
-   question types
-
-### Project Management Insights
-1. **Document every iteration** - Tracking development history helps with
-   debugging
-2. **Commit frequently** - Small, focused commits make debugging easier
-3. **Version control everything** - Including intermediate files during
-   development
-
-## Technical Specifications
-
-**Source Format:** Google Forms  
-**Intermediate Format:** Quarto Markdown (.qmd) + CSV files  
-**Target Format:** XLSForm (.xlsx)  
-**Validation:** KoboToolbox ODK Validate  
-**Dependencies:** Python 3, pandas, openpyxl
-
-## Project Statistics
-
-- **Files Generated:** 10+ including documentation
-- **Questions Captured:** 36 across 6 categories
-- **Choice Options:** 300+ with detailed examples
-
-This project demonstrates the complexity of accurately preserving survey
-content while adapting to different platform requirements, highlighting
-the importance of systematic verification and iterative refinement in
-form migration projects.
+This survey is part of the Data Science for openwashdata course. For more about
+the course, see the [course website](https://ds4owd-002.github.io/website/).
