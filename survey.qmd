@@ -1,0 +1,463 @@
+---
+# Survey configuration.
+# All available settings are documented at https://surveydown.org
+# and listed in _survey/settings.yml after the first render.
+
+theme-settings:
+  theme: default
+  barposition: top
+  footer-left: "Made with [surveydown](https://surveydown.org)"
+  footer-right: "[Source Code](https://github.com/ds4owd-dev/pre-course-survey)"
+
+survey-settings:
+  # "preview" saves responses to a local preview_data.csv file.
+  # Change to "database" once credentials are configured (see app.R).
+  mode: preview
+  show-previous: true
+  use-cookies: true
+  auto-scroll: false
+  rate-survey: false
+  system-language: en
+  highlight-unanswered: true
+  highlight-color: blue
+  capture-metadata: true
+  all-required: false
+  # Required questions, mirroring the `required` column of the XLSForm.
+  # Questions hidden by conditional display (sd_show_if in app.R) are only
+  # enforced when they are visible. Listing a matrix question id (barrier,
+  # llm) makes every row of that matrix required.
+  required:
+    - github_username
+    - orcid_id
+    - email
+    - first_name
+    - surname
+    - country_residence
+    - education
+    - employment_situation
+    - organisation_name
+    - org_type
+    - barrier
+    - prog_general
+    - prog_r
+    - prog_python
+    - other_languages
+    - git_experience
+    - github_experience
+    - data_format
+    - narrative_docs
+    - ide_used
+    - ide_experience
+    - cli_usage
+    - llm_platforms
+    - llm
+    - password_storage
+    - web_browser
+    - web_browser_other
+    - use_bookmarks
+    - use_note_taking_tool
+    - note_taking_tool_specify
+    - learning_goals
+    - data_availability
+    - mentorship_interest
+    - coauthorship
+    - code_conduct
+    - data_privacy
+---
+
+```{r}
+library(surveydown)
+
+# Choice lists generated from the XLSForm choices sheet
+source("choices.R")
+```
+
+--- welcome
+
+# Pre-course survey: Data Science for openwashdata
+
+Thank you for your interest in this course! Your course instructors are looking forward to meeting you. We will meet on Zoom for 10 modules, starting on **Thursday, 11th September, from 14:00 to 16:30 CET**.
+
+Details about the content of the course can be found on the course website: [https://ds4owd-002.github.io/website/](https://ds4owd-002.github.io/website/)
+
+**How do I sign up?**
+
+To sign up for the course, please complete the following four steps:
+
+**Step 1: Get an account on GitHub.**
+
+To set up an account on GitHub, follow these general steps:
+
+1. Go to the GitHub website at [https://github.com/](https://github.com/).
+2. Click on the "Sign up" button on the top right corner of the page.
+3. Enter your preferred username, email address, and password in the provided fields. (Find advice on choosing a good GitHub username here: [https://happygitwithr.com/github-acct](https://happygitwithr.com/github-acct))
+4. Choose whether you want to receive updates and announcements via email.
+5. Complete the verification process by solving a puzzle and entering a verification code sent to your email.
+
+**Step 2: Register for an ORCID iD**
+
+Create your ORCID iD at: [https://orcid.org/register](https://orcid.org/register)
+
+**Step 3: Identify a dataset you want to work with for the capstone project**
+
+This course follows the principle of "open by default". All educational resources are published openly using permissive licenses for reuse. We also apply this principle to the code and data used in the course.
+
+At the end of the course, you will complete a capstone project, which involves analyzing a dataset of your choice. We encourage you to use data available from your company, government institution, research institute, or other personal sources. However, this requires the data to be shared openly, which may not always be possible if it is sensitive or contains personal information. In such cases, you may use a dataset that has already been published openly.
+
+The pre-course survey will help us identify who has their own dataset and who does not. We will begin working with data starting from Module 5.
+
+You can find examples of completed reports from the first iteration of this course here: [https://openwashdata.org/pages/academy/graduates/](https://openwashdata.org/pages/academy/graduates/)
+
+**Step 4: Complete this pre-course survey**
+
+By completing this pre-course survey, you will be registered for the course. We will add you to an email list to keep you informed about the next steps.
+
+--- personal_info
+
+## Personal Information
+
+```{r}
+sd_question(
+  type  = "text",
+  id    = "github_username",
+  label = "Please provide your GitHub username"
+)
+
+sd_question(
+  type  = "text",
+  id    = "orcid_id",
+  label = "Please provide your ORCID iD (e.g. 0000-0003-2196-5015)",
+  placeholder = "0000-0000-0000-0000"
+)
+
+sd_question(
+  type  = "text",
+  id    = "email",
+  label = "Your email address",
+  placeholder = "name@example.org"
+)
+
+sd_question(
+  type  = "text",
+  id    = "first_name",
+  label = "First Name"
+)
+
+sd_question(
+  type  = "text",
+  id    = "surname",
+  label = "Surname"
+)
+
+sd_question(
+  type   = "mc",
+  id     = "gender",
+  label  = "What is your gender?<br>*This question is optional.*",
+  option = opts_gender
+)
+
+sd_question(
+  type  = "text",
+  id    = "gender_self_describe",
+  label = "Prefer to self-describe:"
+)
+
+sd_question(
+  type   = "mc",
+  id     = "age_group",
+  label  = "What is your age group?<br>*This question is optional.*",
+  option = opts_age_group
+)
+
+sd_question(
+  type   = "mc",
+  id     = "accessibility_needs",
+  label  = "Do you have any accessibility needs we should be aware of?<br>*This question is optional.*",
+  option = opts_accessibility
+)
+
+sd_question(
+  type  = "text",
+  id    = "accessibility_specify",
+  label = "Yes (please specify):"
+)
+
+sd_question(
+  type   = "select",
+  id     = "country_residence",
+  label  = "Country of Residence",
+  option = opts_countries
+)
+```
+
+--- education_employment
+
+## Education and Employment
+
+```{r}
+sd_question(
+  type   = "mc",
+  id     = "education",
+  label  = "Education Level",
+  option = opts_education
+)
+
+sd_question(
+  type   = "mc",
+  id     = "employment_situation",
+  label  = "What is your current employment situation?",
+  option = opts_employment
+)
+
+sd_question(
+  type  = "text",
+  id    = "organisation_name",
+  label = "If employed or self-employed what is the name of the organisation / institution?"
+)
+
+sd_question(
+  type   = "mc",
+  id     = "org_type",
+  label  = "If employed or self-employed what best describes the organisation you work for?",
+  option = opts_org_type
+)
+```
+
+--- barriers
+
+## Barriers to Participation
+
+```{r}
+sd_question(
+  type   = "matrix",
+  id     = "barrier",
+  label  = "Which of the following barriers apply to your complete participation in this course?",
+  row    = c(
+    "time"        = "Time availability",
+    "supervisor"  = "My supervisors interests",
+    "internet"    = "Access to stable internet",
+    "electricity" = "Access to electricity",
+    "computer"    = "Access to computer/laptop",
+    "screen"      = "Access to second external screen"
+  ),
+  option = opts_barrier
+)
+```
+
+--- technical_experience
+
+## Technical Experience
+
+```{r}
+sd_question(
+  type   = "mc",
+  id     = "prog_general",
+  label  = "Experience with programming in general",
+  option = opts_programming_exp
+)
+
+sd_question(
+  type   = "mc",
+  id     = "prog_r",
+  label  = "Experience with programming in R",
+  option = opts_programming_exp
+)
+
+sd_question(
+  type   = "mc",
+  id     = "prog_python",
+  label  = "Experience with programming in Python",
+  option = opts_programming_exp
+)
+
+sd_question(
+  type   = "mc_multiple",
+  id     = "other_languages",
+  label  = "Which other programming languages / software do you have experience in?",
+  option = opts_prog_languages
+)
+
+sd_question(
+  type   = "mc",
+  id     = "git_experience",
+  label  = "Which of these best describes your experience with using Git?",
+  option = opts_git_exp
+)
+
+sd_question(
+  type   = "mc",
+  id     = "github_experience",
+  label  = "Which of these best describes your experience with using GitHub?",
+  option = opts_github_exp
+)
+
+sd_question(
+  type   = "mc",
+  id     = "data_format",
+  label  = "In which format do you store the majority of your data?",
+  option = opts_data_storage
+)
+
+sd_question(
+  type   = "mc",
+  id     = "narrative_docs",
+  label  = "Which of these best describes how you write narrative documents that include text and analysis?",
+  option = opts_doc_writing
+)
+
+sd_question(
+  type   = "mc_multiple",
+  id     = "ide_used",
+  label  = "Which of the following Integrated Development Environments (IDEs) have you used?",
+  option = opts_ide_list
+)
+
+sd_question(
+  type   = "mc",
+  id     = "ide_experience",
+  label  = "Which of these best describes your experience with using IDEs?",
+  option = opts_ide_exp
+)
+
+sd_question(
+  type   = "mc",
+  id     = "cli_usage",
+  label  = "Which of these best describes your current usage of the default command-line interface (CLI)? On Mac: The default CLI app is Terminal and the default shell is Zsh (you may also use Bash or other shells). On Windows: The default CLI app is Windows Terminal which can run Command Prompt PowerShell and Bash (via Windows Subsystem for Linux). How would you describe your experience?",
+  option = opts_cli_exp
+)
+
+sd_question(
+  type   = "mc_multiple",
+  id     = "llm_platforms",
+  label  = "Which Large Language Model tools/platforms have you used?",
+  option = opts_llm_tools
+)
+
+sd_question(
+  type   = "matrix",
+  id     = "llm",
+  label  = "How frequently do you use Large Language Models for the following tasks?<br>*Never = I have not used any LLMs. Occasionally = I use LLMs occasionally when needed (e.g. once a week). Regularly = I regularly use LLMs to improve efficiency (e.g. once a day). Rely on them = I rely on LLMs for completion (e.g. several times a day).*",
+  row    = c(
+    "summarization" = "For Summarization (e.g., \"Summarize this research paper in 200 words.\")",
+    "translation"   = "Translation (e.g., \"Translate this email from English to German.\")",
+    "qa"            = "Question Answering (e.g., \"What are the symptoms of vitamin D deficiency?\")",
+    "conversation"  = "Conversational Assistance / Chatbots (e.g., \"Help me with my online order\")",
+    "data_analysis" = "Data Analysis / Extraction (e.g., \"Extract all dates and names from this contract.\")",
+    "content_gen"   = "Content Generation (e.g. images, videos)",
+    "learning"      = "Learning/Teaching/Tutoring (e.g., \"Explain the Pythagorean theorem.\")",
+    "coding"        = "Code assistance that is non-agentic (i.e. LLM provides a response that is copied into a script manually)",
+    "automation"    = "Agentic Task Automation (i.e. LLM acts autonomously or semi-autonomously to perform tasks)"
+  ),
+  option = c(
+    "Never"        = "never",
+    "Occasionally" = "occasional",
+    "Regularly"    = "regular",
+    "Rely on them" = "rely"
+  )
+)
+
+sd_question(
+  type   = "mc",
+  id     = "password_storage",
+  label  = "How do you usually store your passwords or credentials?<br>*Select the option that best describes your usual practice.*",
+  option = opts_password_storage
+)
+
+sd_question(
+  type   = "mc",
+  id     = "web_browser",
+  label  = "Which web browser do you use most often?",
+  option = opts_web_browser
+)
+
+sd_question(
+  type  = "text",
+  id    = "web_browser_other",
+  label = "Other (please specify):"
+)
+
+sd_question(
+  type   = "mc",
+  id     = "use_bookmarks",
+  label  = "Do you use browser bookmarks?",
+  option = opts_yesno
+)
+
+sd_question(
+  type   = "mc",
+  id     = "use_note_taking_tool",
+  label  = "Do you use a note-taking tool?",
+  option = opts_yesno
+)
+
+sd_question(
+  type  = "text",
+  id    = "note_taking_tool_specify",
+  label = "Which tool do you use?"
+)
+```
+
+--- project_participation
+
+## Project and Course Participation
+
+```{r}
+sd_question(
+  type  = "textarea",
+  id    = "learning_goals",
+  label = "What do you want to know or be able to do that you don't know or can't do right now?"
+)
+
+sd_question(
+  type   = "mc",
+  id     = "data_availability",
+  label  = "Can you identify a dataset of your own or your organisation that you can use for the capstone project report and share publicly as open data (see details in survey description Step 3)?",
+  option = opts_yesno
+)
+
+sd_question(
+  type   = "mc",
+  id     = "mentorship_interest",
+  label  = "We are launching a mentorship programme that brings together participants with different levels of experience, so they can support and learn from each other in small groups. We will match mentors and mentees after module 2 and the programme will run through the duration of the course. Are you interested in joining this mentorship programme?",
+  option = opts_mentorship
+)
+```
+
+--- agreements
+
+## Agreements and Consent
+
+```{r}
+sd_question(
+  type   = "mc",
+  id     = "coauthorship",
+  label  = "I agree to be listed as a co-author of the open dataset generated from this course. I understand that my authorship will be linked to my ORCID iD to acknowledge my contribution.",
+  option = opts_yesnomoreinfo
+)
+
+sd_question(
+  type   = "mc",
+  id     = "code_conduct",
+  label  = "I acknowledge that I have read and understood the code of conduct for this course, and I commit to complying with its guidelines and principles to ensure a respectful and ethical learning environment for all participants. Available at: [https://ds4owd-002.github.io/website/code_of_conduct.html](https://ds4owd-002.github.io/website/code_of_conduct.html)",
+  option = opts_yes
+)
+
+sd_question(
+  type   = "mc",
+  id     = "data_privacy",
+  label  = "I agree that by submitting this form, I consent to my data being used for course administration and management, accessed only by instructors, securely stored, not shared with third parties, anonymized for reporting, and potentially used for future research to improve the course. For reporting purposes, your personal identifiers (ORCID iD, GitHub username) will be removed from the data. The anonymized data may be used for future research, scientific publications, and analysis to improve the course.",
+  option = opts_yes
+)
+```
+
+--- end
+
+## Thank you!
+
+By completing this pre-course survey, you are registered for the course. We will add you to an email list to keep you informed about the next steps.
+
+We look forward to meeting you!
+
+```{r}
+sd_close()
+```

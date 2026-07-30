@@ -3,3 +3,11 @@
 .RData
 .Ruserdata
 .DS_Store
+
+# surveydown
+_survey/
+survey.html
+survey_files/
+preview_data.csv
+local_data.csv
+.env
